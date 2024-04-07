@@ -1,7 +1,9 @@
 {
-  "compilerOptions": {
-    "target": "es2021",
-    "module": "commonjs",
-    "strict": true
-  }
+	"compilerOptions": {
+		"target": "es2021",
+		"module": "commonjs",
+		"strict": true,
+		"resolveJsonModule": true,
+		"esModuleInterop": true
+	}
 }

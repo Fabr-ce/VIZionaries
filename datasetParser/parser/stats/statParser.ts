@@ -30,6 +30,7 @@ export class StatParser {
 	private sets: Point[][] = []
 	private setPoints: Point[] = []
 	private currentPoint: Point = {} as Point
+	private currentActions: Action[] = []
 
 	private lastAction: Action = {} as Action
 
@@ -58,8 +59,19 @@ export class StatParser {
 			this.currentPoint.hRot = rotH
 			this.currentPoint.aRot = rotA
 			this.currentPoint.homePoint = homeScore > lastHomeScore
+			this.currentPoint.actions = this.currentActions
+			if (!this.currentPoint.hSPos || !this.currentPoint.aSPos) {
+				const lastPoint = this.setPoints[this.setPoints.length - 1]
+				if (lastPoint) {
+					this.currentPoint.hSPos =
+						lastPoint.homePoint && !lastPoint.actions[0].home ? (lastPoint.hSPos % 6) + 1 : lastPoint.hSPos
+					this.currentPoint.aSPos =
+						!lastPoint.homePoint && lastPoint.actions[0].home ? (lastPoint.aSPos % 6) + 1 : lastPoint.aSPos
+				}
+			}
 			this.setPoints.push(this.currentPoint)
 			this.currentPoint = {} as Point
+			this.currentActions = []
 		} else if (codeType === "z") {
 			//setter position
 			const pos = parseInt(code.substring(2, 3), 10)
@@ -178,8 +190,7 @@ export class StatParser {
 				return
 			}
 
-			if (this.currentPoint.actions) this.currentPoint.actions.push(currentAction)
-			else this.currentPoint.actions = [currentAction]
+			this.currentActions.push(currentAction)
 			this.lastAction = currentAction
 		}
 	}

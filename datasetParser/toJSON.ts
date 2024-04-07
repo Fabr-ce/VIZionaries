@@ -1,9 +1,9 @@
 import * as fs from "fs/promises"
 import parseDatasheet from "./parser/parseDatasheet"
 import { matchData } from "./parser/types"
+import { Actions } from "./parser/stats/types"
 
 const toJSON = async (path: string) => {
-	console.log("called")
 	const directory = await fs.readdir(path)
 
 	const dataset: matchData[] = []
