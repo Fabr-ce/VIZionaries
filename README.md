@@ -14,6 +14,8 @@ see [PDF](./milestone-1.pdf)
 
 ## Milestone 2 (26th April, 5pm)
 
+see [PDF](./milestone-2pdf)
+
 **10% of the final grade**
 
 ## Milestone 3 (31st May, 5pm)
