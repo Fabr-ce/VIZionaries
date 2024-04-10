@@ -1,7 +1,7 @@
 import { matchData } from "../../parser/types"
-import { MeanScoreObserver } from "./observer"
+import { MeanScoreObserver, ScoreObserver } from "./observer"
 
-export const getAveragePlayPerPosition = (matchArray: matchData[], oberserver: MeanScoreObserver[]) => {
+export const getAveragePlayPerPosition = (matchArray: matchData[], oberserver: ScoreObserver[]) => {
 	const nums: number[] = []
 	for (const match of matchArray) {
 		for (const sets of match.sets) {

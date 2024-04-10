@@ -2,7 +2,13 @@ import { Action, Actions, Point } from "../../parser/stats/types"
 import { getPositionFromAction } from "../helper"
 import { VolleyPosition } from "../types"
 
-export abstract class MeanScoreObserver {
+export interface ScoreObserver {
+	action: Actions
+	position: VolleyPosition
+	addAction(action: Action, point: Point): void
+}
+
+export abstract class MeanScoreObserver implements ScoreObserver {
 	static readonly position: VolleyPosition[]
 	abstract readonly name: string
 
