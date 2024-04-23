@@ -1,6 +1,6 @@
-import { Action, Actions, Point } from "../../parser/stats/types"
+import { Action, Actions, Attack, AttackOutcomes, Point } from "../../parser/stats/types"
 import { VolleyPosition } from "../types"
-import { MeanScoreObserver } from "./observer"
+import { DataAggregation, MeanScoreObserver } from "./observer"
 
 export class PointAttack extends MeanScoreObserver {
 	static position = [VolleyPosition.Outside, VolleyPosition.Middle, VolleyPosition.Opposite, VolleyPosition.Setter]
@@ -34,6 +34,30 @@ export class EffAttack extends MeanScoreObserver {
 	}
 }
 
-const attackObserver = [PointAttack, FaultAttack, EffAttack]
+export const attackMeanObserver = [PointAttack, FaultAttack, EffAttack]
 
-export default attackObserver
+type AttackList = Partial<Attack> | { playerId: string }
+
+export class GeneralAttack extends DataAggregation<AttackList> {
+	action: Actions = Actions.Attack
+	include(action: Action, point: Point): boolean {
+		return true
+	}
+	mapToValue(action: Action, point: Point, playerId: string): AttackList {
+		const { attackType, attackCombo, fromPos, toPos, toPosExact, attackSpeed, blockCount, outcome } =
+			action as Attack
+		return {
+			attackType,
+			attackCombo,
+			fromPos,
+			toPos,
+			toPosExact,
+			attackSpeed,
+			blockCount,
+			outcome,
+			playerId,
+		} as AttackList
+	}
+}
+
+export const attackAggregations = [new GeneralAttack("./aggregation/data/GeneralAttack.json")]

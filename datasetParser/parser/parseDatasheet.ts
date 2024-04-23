@@ -86,7 +86,7 @@ const processPlayer = (line: string) => {
 	const data = splitLine(line)
 	return {
 		number: parseInt(data[1]),
-		code: parseInt(data[8]),
+		code: data[8],
 		lastName: data[9],
 		firstName: data[10],
 		isLibero: data[12] === "L",
@@ -119,7 +119,7 @@ const processSetScore = (sets: string[]) => {
 
 const processTeamInfo = (line: string, teamInfo: TeamInfo) => {
 	const data = splitLine(line)
-	teamInfo.code = parseInt(data[0])
+	teamInfo.code = data[0]
 	teamInfo.name = data[1]
 	teamInfo.headCoach = data[3]
 	teamInfo.assistantCoach = data[4]

@@ -1,6 +1,6 @@
-import { Action, Actions, Point } from "../../parser/stats/types"
+import { Action, Actions, Point, Serve } from "../../parser/stats/types"
 import { VolleyPosition } from "../types"
-import { MeanScoreObserver } from "./observer"
+import { DataAggregation, MeanScoreObserver } from "./observer"
 
 export class AceServe extends MeanScoreObserver {
 	static position = [VolleyPosition.Outside, VolleyPosition.Middle, VolleyPosition.Opposite, VolleyPosition.Setter]
@@ -34,6 +34,26 @@ export class EffServe extends MeanScoreObserver {
 	}
 }
 
-const serviceObserver = [AceServe, FaultServe, EffServe]
+export const serveMeanObserver = [AceServe, FaultServe, EffServe]
 
-export default serviceObserver
+type ServiceList = Partial<Serve> | { playerId: string }
+
+export class GeneralServe extends DataAggregation<ServiceList> {
+	action: Actions = Actions.Serve
+	include(action: Action, point: Point): boolean {
+		return true
+	}
+	mapToValue(action: Action, point: Point, playerId: string): ServiceList {
+		const { type, fromPos, toPos, toPosExact, outcome } = action as Serve
+		return {
+			type,
+			fromPos,
+			toPos,
+			toPosExact,
+			outcome,
+			playerId,
+		} as ServiceList
+	}
+}
+
+export const serveAggregations = [new GeneralServe("./aggregation/data/GeneralServe.json")]

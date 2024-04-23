@@ -1,10 +1,12 @@
 import { Action, Actions, Point } from "../../parser/stats/types"
+import { matchData } from "../../parser/types"
 import { getPositionFromAction } from "../helper"
 import { VolleyPosition } from "../types"
+import fs from "fs/promises"
 
 export interface ScoreObserver {
 	action: Actions
-	position: VolleyPosition
+	setMatch?(match: matchData): void
 	addAction(action: Action, point: Point): void
 }
 
@@ -49,6 +51,50 @@ export abstract class MeanScoreObserver implements ScoreObserver {
 	}
 
 	abstract getScore(action: Action, point: Point): number | null
+}
+
+export abstract class DataAggregation<T> implements ScoreObserver {
+	abstract readonly action: Actions
+	readonly path: string
+
+	playerIdMap: Map<string, string> = new Map()
+
+	constructor(path: string) {
+		this.path = path
+	}
+
+	private aggregation: T[] = []
+
+	setMatch(match: matchData) {
+		this.playerIdMap = new Map()
+		for (const homeTeam of match.homeTeam.players) {
+			this.playerIdMap.set("h" + homeTeam.number, homeTeam.code)
+		}
+		for (const awayTeam of match.awayTeam.players) {
+			this.playerIdMap.set("a" + awayTeam.number, awayTeam.code)
+		}
+	}
+
+	addAction(action: Action, point: Point): void {
+		if (action.action !== this.action) return
+
+		if (this.include(action, point)) {
+			const playerId = this.playerIdMap.get((action.home ? "h" : "a") + action.player)
+			if (!playerId) {
+				console.log(playerId, this.playerIdMap, (action.home ? "h" : "a") + action.player)
+				throw new Error("Player not found!")
+			}
+			this.aggregation.push(this.mapToValue(action, point, playerId))
+		}
+	}
+
+	async export() {
+		const data = JSON.stringify(this.aggregation)
+		await fs.writeFile(this.path, data)
+	}
+
+	abstract include(action: Action, point: Point): boolean
+	abstract mapToValue(action: Action, point: Point, playerId: string): T
 }
 
 // Implementation Classes

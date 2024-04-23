@@ -1,0 +1,786 @@
+[
+  {
+    "number": 1,
+    "code": "-452204",
+    "lastName": "Hasler",
+    "firstName": "Lukas",
+    "isLibero": true,
+    "team": "Volley Schönenwerd (NLA Men)"
+  },
+  {
+    "number": 3,
+    "code": "-452203",
+    "lastName": "Fischer",
+    "firstName": "Julian",
+    "isLibero": true,
+    "team": "Volley Schönenwerd (NLA Men)"
+  },
+  {
+    "number": 4,
+    "code": "-452201",
+    "lastName": "Oestvik",
+    "firstName": "Petter",
+    "isLibero": false,
+    "team": "Volley Schönenwerd (NLA Men)"
+  },
+  {
+    "number": 5,
+    "code": "-452199",
+    "lastName": "Ulrich",
+    "firstName": "Luca",
+    "isLibero": false,
+    "team": "Volley Schönenwerd (NLA Men)"
+  },
+  {
+    "number": 6,
+    "code": "-452193",
+    "lastName": "Giger",
+    "firstName": "Reto",
+    "isLibero": false,
+    "team": "Volley Schönenwerd (NLA Men)"
+  },
+  {
+    "number": 8,
+    "code": "-452197",
+    "lastName": "Kolb",
+    "firstName": "Cyril",
+    "isLibero": false,
+    "team": "Volley Schönenwerd (NLA Men)"
+  },
+  {
+    "number": 9,
+    "code": "-452202",
+    "lastName": "Von Burg",
+    "firstName": "Mischa",
+    "isLibero": false,
+    "team": "Volley Schönenwerd (NLA Men)"
+  },
+  {
+    "number": 10,
+    "code": "-452200",
+    "lastName": "Acklin",
+    "firstName": "Curdin",
+    "isLibero": false,
+    "team": "Volley Schönenwerd (NLA Men)"
+  },
+  {
+    "number": 11,
+    "code": "-452194",
+    "lastName": "Ulrich",
+    "firstName": "Lars",
+    "isLibero": false,
+    "team": "Volley Schönenwerd (NLA Men)"
+  },
+  {
+    "number": 17,
+    "code": "-452198",
+    "lastName": "Tobli",
+    "firstName": "Nils",
+    "isLibero": false,
+    "team": "Volley Schönenwerd (NLA Men)"
+  },
+  {
+    "number": 19,
+    "code": "-452196",
+    "lastName": "Indeewara",
+    "firstName": "Mahela",
+    "isLibero": false,
+    "team": "Volley Schönenwerd (NLA Men)"
+  },
+  {
+    "number": 1,
+    "code": "-296534",
+    "lastName": "DIEM",
+    "firstName": "Ramon",
+    "isLibero": true,
+    "team": "Volley Amriswil (NLA Men)"
+  },
+  {
+    "number": 2,
+    "code": "-452516",
+    "lastName": "Sorgue",
+    "firstName": "Agustin",
+    "isLibero": false,
+    "team": "Volley Amriswil (NLA Men)"
+  },
+  {
+    "number": 5,
+    "code": "-311152",
+    "lastName": "Filippov",
+    "firstName": "DMYTRO",
+    "isLibero": false,
+    "team": "Volley Amriswil (NLA Men)"
+  },
+  {
+    "number": 6,
+    "code": "-311158",
+    "lastName": "Hohne",
+    "firstName": "Bjorn",
+    "isLibero": false,
+    "team": "Volley Amriswil (NLA Men)"
+  },
+  {
+    "number": 7,
+    "code": "-452517",
+    "lastName": "Zingg",
+    "firstName": "Raffael",
+    "isLibero": false,
+    "team": "Volley Amriswil (NLA Men)"
+  },
+  {
+    "number": 8,
+    "code": "-409913",
+    "lastName": "SCHALCH",
+    "firstName": "ETIENNE",
+    "isLibero": false,
+    "team": "Volley Amriswil (NLA Men)"
+  },
+  {
+    "number": 10,
+    "code": "-446639",
+    "lastName": "Holdaway",
+    "firstName": "Shane",
+    "isLibero": false,
+    "team": "Volley Amriswil (NLA Men)"
+  },
+  {
+    "number": 11,
+    "code": "-322970",
+    "lastName": "Messerli",
+    "firstName": "Jan",
+    "isLibero": false,
+    "team": "Volley Amriswil (NLA Men)"
+  },
+  {
+    "number": 15,
+    "code": "-452518",
+    "lastName": "Weisigk",
+    "firstName": "Julian",
+    "isLibero": false,
+    "team": "Volley Amriswil (NLA Men)"
+  },
+  {
+    "number": 16,
+    "code": "-369707",
+    "lastName": "Schedl",
+    "firstName": "Maximillian",
+    "isLibero": false,
+    "team": "Volley Amriswil (NLA Men)"
+  },
+  {
+    "number": 17,
+    "code": "-347220",
+    "lastName": "Imhoff",
+    "firstName": "Facundo",
+    "isLibero": false,
+    "team": "Volley Amriswil (NLA Men)"
+  },
+  {
+    "number": 18,
+    "code": "-452519",
+    "lastName": "Purificacao",
+    "firstName": "Renan",
+    "isLibero": false,
+    "team": "Volley Amriswil (NLA Men)"
+  },
+  {
+    "number": 20,
+    "code": "-368677",
+    "lastName": "Migge",
+    "firstName": "Lars",
+    "isLibero": false,
+    "team": "Volley Amriswil (NLA Men)"
+  },
+  {
+    "number": 1,
+    "code": "-452825",
+    "lastName": "YVES",
+    "firstName": "ROTH",
+    "isLibero": false,
+    "team": "TSV Jona Volleyball (NLA Men)"
+  },
+  {
+    "number": 2,
+    "code": "-449306",
+    "lastName": "PLITZGA",
+    "firstName": "ERNEST",
+    "isLibero": false,
+    "team": "TSV Jona Volleyball (NLA Men)"
+  },
+  {
+    "number": 3,
+    "code": "-452824",
+    "lastName": "NICO",
+    "firstName": "BEELER",
+    "isLibero": false,
+    "team": "TSV Jona Volleyball (NLA Men)"
+  },
+  {
+    "number": 5,
+    "code": "-454341",
+    "lastName": "O.",
+    "firstName": "Clement.",
+    "isLibero": false,
+    "team": "TSV Jona Volleyball (NLA Men)"
+  },
+  {
+    "number": 6,
+    "code": "-457638",
+    "lastName": "GIANLUCA",
+    "firstName": "ABLONDI",
+    "isLibero": false,
+    "team": "TSV Jona Volleyball (NLA Men)"
+  },
+  {
+    "number": 8,
+    "code": "-457639",
+    "lastName": "FLORIAN",
+    "firstName": "LICKA",
+    "isLibero": false,
+    "team": "TSV Jona Volleyball (NLA Men)"
+  },
+  {
+    "number": 9,
+    "code": "-457640",
+    "lastName": "RAMON",
+    "firstName": "CAVIEZEL",
+    "isLibero": false,
+    "team": "TSV Jona Volleyball (NLA Men)"
+  },
+  {
+    "number": 10,
+    "code": "-457641",
+    "lastName": "SIMON",
+    "firstName": "MARGOT",
+    "isLibero": false,
+    "team": "TSV Jona Volleyball (NLA Men)"
+  },
+  {
+    "number": 11,
+    "code": "-409970",
+    "lastName": "CLEMENT",
+    "firstName": "NOEL",
+    "isLibero": false,
+    "team": "TSV Jona Volleyball (NLA Men)"
+  },
+  {
+    "number": 12,
+    "code": "-457642",
+    "lastName": "LINUS",
+    "firstName": "BIRCHLER",
+    "isLibero": false,
+    "team": "TSV Jona Volleyball (NLA Men)"
+  },
+  {
+    "number": 14,
+    "code": "-457643",
+    "lastName": "CURDIN",
+    "firstName": "FINSCHI",
+    "isLibero": false,
+    "team": "TSV Jona Volleyball (NLA Men)"
+  },
+  {
+    "number": 16,
+    "code": "-400710",
+    "lastName": "LAUENER",
+    "firstName": "DOMINIK",
+    "isLibero": false,
+    "team": "TSV Jona Volleyball (NLA Men)"
+  },
+  {
+    "number": 19,
+    "code": "-452829",
+    "lastName": "CYRILL",
+    "firstName": "WEISS",
+    "isLibero": true,
+    "team": "TSV Jona Volleyball (NLA Men)"
+  },
+  {
+    "number": 20,
+    "code": "-400775",
+    "lastName": "SCHMIDT",
+    "firstName": "JONAS",
+    "isLibero": true,
+    "team": "TSV Jona Volleyball (NLA Men)"
+  },
+  {
+    "number": 2,
+    "code": "-408812",
+    "lastName": "Harksen",
+    "firstName": "Peer",
+    "isLibero": false,
+    "team": "Volley Luzern (NLA Men)"
+  },
+  {
+    "number": 4,
+    "code": "-408814",
+    "lastName": "Bruno",
+    "firstName": "Jukic",
+    "isLibero": false,
+    "team": "Volley Luzern (NLA Men)"
+  },
+  {
+    "number": 5,
+    "code": "-408810",
+    "lastName": "Müller",
+    "firstName": "Luca",
+    "isLibero": false,
+    "team": "Volley Luzern (NLA Men)"
+  },
+  {
+    "number": 6,
+    "code": "-408815",
+    "lastName": "Manuel",
+    "firstName": "Alessandrini",
+    "isLibero": false,
+    "team": "Volley Luzern (NLA Men)"
+  },
+  {
+    "number": 7,
+    "code": "-457659",
+    "lastName": "ALEXANDER",
+    "firstName": "SCHMID",
+    "isLibero": false,
+    "team": "Volley Luzern (NLA Men)"
+  },
+  {
+    "number": 8,
+    "code": "-389304",
+    "lastName": "Peter",
+    "firstName": "Jonas",
+    "isLibero": true,
+    "team": "Volley Luzern (NLA Men)"
+  },
+  {
+    "number": 9,
+    "code": "-408809",
+    "lastName": "Broch",
+    "firstName": "Nathan",
+    "isLibero": false,
+    "team": "Volley Luzern (NLA Men)"
+  },
+  {
+    "number": 10,
+    "code": "-408811",
+    "lastName": "Lubina",
+    "firstName": "Dominik",
+    "isLibero": false,
+    "team": "Volley Luzern (NLA Men)"
+  },
+  {
+    "number": 11,
+    "code": "-457660",
+    "lastName": "RICHARD",
+    "firstName": "PEEMüLLER",
+    "isLibero": false,
+    "team": "Volley Luzern (NLA Men)"
+  },
+  {
+    "number": 15,
+    "code": "-389305",
+    "lastName": "Charpilloz",
+    "firstName": "Yves",
+    "isLibero": false,
+    "team": "Volley Luzern (NLA Men)"
+  },
+  {
+    "number": 16,
+    "code": "-400700",
+    "lastName": "Doos",
+    "firstName": "Stig",
+    "isLibero": false,
+    "team": "Volley Luzern (NLA Men)"
+  },
+  {
+    "number": 17,
+    "code": "-389303",
+    "lastName": "Lengweiler",
+    "firstName": "Alex",
+    "isLibero": false,
+    "team": "Volley Luzern (NLA Men)"
+  },
+  {
+    "number": 13,
+    "code": "TAN-SAM",
+    "lastName": "Tanner",
+    "firstName": "Samuel",
+    "isLibero": true,
+    "team": "Volley Luzern (NLA Men)"
+  },
+  {
+    "number": 2,
+    "code": "-441138",
+    "lastName": "Blaser",
+    "firstName": "Samuel",
+    "isLibero": true,
+    "team": "Biogas Volley Näfels (NLA Men)"
+  },
+  {
+    "number": 3,
+    "code": "-456338",
+    "lastName": "HABR",
+    "firstName": "FILIP",
+    "isLibero": false,
+    "team": "Biogas Volley Näfels (NLA Men)"
+  },
+  {
+    "number": 4,
+    "code": "-441135",
+    "lastName": "Biella",
+    "firstName": "Bruno",
+    "isLibero": false,
+    "team": "Biogas Volley Näfels (NLA Men)"
+  },
+  {
+    "number": 6,
+    "code": "-399099",
+    "lastName": "Suess",
+    "firstName": "Nico",
+    "isLibero": false,
+    "team": "Biogas Volley Näfels (NLA Men)"
+  },
+  {
+    "number": 7,
+    "code": "-441134",
+    "lastName": "Aebli",
+    "firstName": "Kai",
+    "isLibero": false,
+    "team": "Biogas Volley Näfels (NLA Men)"
+  },
+  {
+    "number": 8,
+    "code": "-340161",
+    "lastName": "Thuner",
+    "firstName": "Gian-Luca",
+    "isLibero": false,
+    "team": "Biogas Volley Näfels (NLA Men)"
+  },
+  {
+    "number": 10,
+    "code": "-441136",
+    "lastName": "Yamamoto",
+    "firstName": "Vitor Yudi",
+    "isLibero": false,
+    "team": "Biogas Volley Näfels (NLA Men)"
+  },
+  {
+    "number": 11,
+    "code": "-441137",
+    "lastName": "Bartholet",
+    "firstName": "Christian",
+    "isLibero": false,
+    "team": "Biogas Volley Näfels (NLA Men)"
+  },
+  {
+    "number": 15,
+    "code": "-340159",
+    "lastName": "Nikolov",
+    "firstName": "Risto",
+    "isLibero": false,
+    "team": "Biogas Volley Näfels (NLA Men)"
+  },
+  {
+    "number": 19,
+    "code": "-292949",
+    "lastName": "Aebli",
+    "firstName": "David",
+    "isLibero": false,
+    "team": "Biogas Volley Näfels (NLA Men)"
+  },
+  {
+    "number": 20,
+    "code": "-398029",
+    "lastName": "Antti",
+    "firstName": "Ropponen",
+    "isLibero": false,
+    "team": "Biogas Volley Näfels (NLA Men)"
+  },
+  {
+    "number": 2,
+    "code": "-453094",
+    "lastName": "Eaton",
+    "firstName": "Kilian",
+    "isLibero": false,
+    "team": "Chênois Genève Volleyball (NLA Men)"
+  },
+  {
+    "number": 3,
+    "code": "-453092",
+    "lastName": "Kordas",
+    "firstName": "Valentin",
+    "isLibero": false,
+    "team": "Chênois Genève Volleyball (NLA Men)"
+  },
+  {
+    "number": 4,
+    "code": "-453089",
+    "lastName": "Sánchez",
+    "firstName": "Ignacio",
+    "isLibero": false,
+    "team": "Chênois Genève Volleyball (NLA Men)"
+  },
+  {
+    "number": 5,
+    "code": "-453095",
+    "lastName": "Kurik",
+    "firstName": "Joosep",
+    "isLibero": false,
+    "team": "Chênois Genève Volleyball (NLA Men)"
+  },
+  {
+    "number": 7,
+    "code": "-453097",
+    "lastName": "Del Valle",
+    "firstName": "Dennis",
+    "isLibero": true,
+    "team": "Chênois Genève Volleyball (NLA Men)"
+  },
+  {
+    "number": 8,
+    "code": "-453093",
+    "lastName": "Poffet",
+    "firstName": "Baptiste",
+    "isLibero": false,
+    "team": "Chênois Genève Volleyball (NLA Men)"
+  },
+  {
+    "number": 10,
+    "code": "-453098",
+    "lastName": "Norris",
+    "firstName": "James",
+    "isLibero": false,
+    "team": "Chênois Genève Volleyball (NLA Men)"
+  },
+  {
+    "number": 12,
+    "code": "-453096",
+    "lastName": "Maciel",
+    "firstName": "Daniel De Souza",
+    "isLibero": false,
+    "team": "Chênois Genève Volleyball (NLA Men)"
+  },
+  {
+    "number": 13,
+    "code": "-453099",
+    "lastName": "Maag",
+    "firstName": "Simon",
+    "isLibero": false,
+    "team": "Chênois Genève Volleyball (NLA Men)"
+  },
+  {
+    "number": 14,
+    "code": "-453101",
+    "lastName": "Djokic",
+    "firstName": "Jovan",
+    "isLibero": false,
+    "team": "Chênois Genève Volleyball (NLA Men)"
+  },
+  {
+    "number": 15,
+    "code": "-453091",
+    "lastName": "Jucker",
+    "firstName": "Mathis",
+    "isLibero": false,
+    "team": "Chênois Genève Volleyball (NLA Men)"
+  },
+  {
+    "number": 19,
+    "code": "-453102",
+    "lastName": "Zerika",
+    "firstName": "Karim",
+    "isLibero": false,
+    "team": "Chênois Genève Volleyball (NLA Men)"
+  },
+  {
+    "number": 14,
+    "code": "-454347",
+    "lastName": "Finschi",
+    "firstName": "Curdin",
+    "isLibero": false,
+    "team": "TSV Jona Volleyball (NLA Men)"
+  },
+  {
+    "number": 18,
+    "code": "-400696",
+    "lastName": "BOLLI",
+    "firstName": "MORITZ",
+    "isLibero": false,
+    "team": "TSV Jona Volleyball (NLA Men)"
+  },
+  {
+    "number": 20,
+    "code": "-452195",
+    "lastName": "Leitis",
+    "firstName": "Velss",
+    "isLibero": false,
+    "team": "Volley Schönenwerd (NLA Men)"
+  },
+  {
+    "number": 1,
+    "code": "-427391",
+    "lastName": "Schneider",
+    "firstName": "Tim",
+    "isLibero": false,
+    "team": "Lausanne UC (NLA Men)"
+  },
+  {
+    "number": 2,
+    "code": "-409549",
+    "lastName": "Favre",
+    "firstName": "Anthony",
+    "isLibero": true,
+    "team": "Lausanne UC (NLA Men)"
+  },
+  {
+    "number": 3,
+    "code": "-409916",
+    "lastName": "BORRELLO",
+    "firstName": "LUCA",
+    "isLibero": false,
+    "team": "Lausanne UC (NLA Men)"
+  },
+  {
+    "number": 5,
+    "code": "-427392",
+    "lastName": "Boon",
+    "firstName": "David",
+    "isLibero": false,
+    "team": "Lausanne UC (NLA Men)"
+  },
+  {
+    "number": 6,
+    "code": "-245985",
+    "lastName": "MONTAVON",
+    "firstName": "Mathias",
+    "isLibero": false,
+    "team": "Lausanne UC (NLA Men)"
+  },
+  {
+    "number": 7,
+    "code": "-401345",
+    "lastName": "PASCAL",
+    "firstName": "Raphaël",
+    "isLibero": false,
+    "team": "Lausanne UC (NLA Men)"
+  },
+  {
+    "number": 10,
+    "code": "-409908",
+    "lastName": "INEICHEN",
+    "firstName": "LUCA",
+    "isLibero": false,
+    "team": "Lausanne UC (NLA Men)"
+  },
+  {
+    "number": 11,
+    "code": "-462483",
+    "lastName": "ZAUG",
+    "firstName": "NOLAN",
+    "isLibero": false,
+    "team": "Lausanne UC (NLA Men)"
+  },
+  {
+    "number": 14,
+    "code": "-400896",
+    "lastName": "BAYET",
+    "firstName": "Tim",
+    "isLibero": false,
+    "team": "Lausanne UC (NLA Men)"
+  },
+  {
+    "number": 15,
+    "code": "-462480",
+    "lastName": "ROMAIN",
+    "firstName": "ENGLER",
+    "isLibero": false,
+    "team": "Lausanne UC (NLA Men)"
+  },
+  {
+    "number": 16,
+    "code": "-400897",
+    "lastName": "LECAT",
+    "firstName": "Hugo",
+    "isLibero": true,
+    "team": "Lausanne UC (NLA Men)"
+  },
+  {
+    "number": 18,
+    "code": "-427388",
+    "lastName": "Ramm�",
+    "firstName": "Filipi",
+    "isLibero": false,
+    "team": "Lausanne UC (NLA Men)"
+  },
+  {
+    "number": 9,
+    "code": "-456285",
+    "lastName": "FABRICE",
+    "firstName": "EGGER",
+    "isLibero": false,
+    "team": "Lausanne UC (NLA Men)"
+  },
+  {
+    "number": 12,
+    "code": "-427389",
+    "lastName": "Balague",
+    "firstName": "Manuel",
+    "isLibero": false,
+    "team": "Lausanne UC (NLA Men)"
+  },
+  {
+    "number": 20,
+    "code": "-427390",
+    "lastName": "Soria",
+    "firstName": "Sergio",
+    "isLibero": false,
+    "team": "Lausanne UC (NLA Men)"
+  },
+  {
+    "number": 9,
+    "code": "-470105",
+    "lastName": "Young",
+    "firstName": "Joshua",
+    "isLibero": false,
+    "team": "Biogas Volley Näfels (NLA Men)"
+  },
+  {
+    "number": 13,
+    "code": "-398028",
+    "lastName": "Blazej",
+    "firstName": "Podlesny",
+    "isLibero": false,
+    "team": "Biogas Volley Näfels (NLA Men)"
+  },
+  {
+    "number": 5,
+    "code": "-473629",
+    "lastName": "FRISCHMUTH",
+    "firstName": "PASCAL",
+    "isLibero": false,
+    "team": "TSV Jona Volleyball (NLA Men)"
+  },
+  {
+    "number": 6,
+    "code": "-453103",
+    "lastName": "Verde",
+    "firstName": "Alessandro",
+    "isLibero": false,
+    "team": "Chênois Genève Volleyball (NLA Men)"
+  },
+  {
+    "number": 21,
+    "code": "-114673",
+    "lastName": "PREVEL",
+    "firstName": "Adrien",
+    "isLibero": false,
+    "team": "Lausanne UC (NLA Men)"
+  },
+  {
+    "number": 4,
+    "code": "-473628",
+    "lastName": "ISELIN",
+    "firstName": "NICO",
+    "isLibero": true,
+    "team": "TSV Jona Volleyball (NLA Men)"
+  }
+]

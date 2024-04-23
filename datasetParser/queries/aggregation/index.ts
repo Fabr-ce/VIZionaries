@@ -1,23 +1,23 @@
 import { matchData } from "../../parser/types"
-import { getAveragePlayPerPosition } from "./aggregators"
-import { MeanScoreObserver, ScoreObserver } from "./observer"
-import serveObserver from "./serveObserver"
-import attackObserver from "./attackObserver"
+import { aggregateAll } from "./aggregators"
+import { DataAggregation, MeanScoreObserver, ScoreObserver } from "./observer"
+import { serveMeanObserver, serveAggregations } from "./serveObserver"
+import { attackMeanObserver, attackAggregations } from "./attackObserver"
 import { VolleyPosition } from "../types"
 
 // mean score observers
-const meanScoreConstructors = [...serveObserver, ...attackObserver]
+const meanScoreConstructors = [...serveMeanObserver, ...attackMeanObserver]
 const meanScoreObservers: MeanScoreObserver[] = []
 for (const obs of meanScoreConstructors) {
 	meanScoreObservers.push(...obs.createObserver())
 }
 
 // table observers
-const tableScoreObservers: ScoreObserver[] = []
+const tableScoreObservers: DataAggregation<any>[] = [...attackAggregations, ...serveAggregations]
 
 const computeMeanAggregations = (matchData: matchData[]) => {
 	const totalObservers: ScoreObserver[] = [...meanScoreObservers, ...tableScoreObservers]
-	getAveragePlayPerPosition(matchData, totalObservers)
+	aggregateAll(matchData, totalObservers)
 
 	const meanResults = computeMeanResults(meanScoreObservers)
 	const tableResults = computeTableResults(tableScoreObservers)
@@ -25,7 +25,11 @@ const computeMeanAggregations = (matchData: matchData[]) => {
 	return { meanResults, tableResults }
 }
 
-const computeTableResults = (observers: ScoreObserver[]) => {}
+const computeTableResults = async (observers: DataAggregation<any>[]) => {
+	for (const observer of observers) {
+		await observer.export()
+	}
+}
 
 const computeMeanResults = (observers: MeanScoreObserver[]) => {
 	const results: { [pos in VolleyPosition]: { [k: string]: number[] } } = {

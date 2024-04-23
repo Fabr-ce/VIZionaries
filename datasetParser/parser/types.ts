@@ -14,7 +14,7 @@ export type SetType = {
 }
 
 export interface TeamInfo {
-	code: number
+	code: string
 	name: string
 	headCoach?: string
 	assistantCoach?: string
@@ -23,7 +23,7 @@ export interface TeamInfo {
 
 export interface PlayerType {
 	number: number
-	code: number
+	code: string
 	lastName: string
 	firstName: string
 	isLibero: boolean
