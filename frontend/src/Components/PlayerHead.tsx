@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom"
 import playerAttack from "../images/player_attack.png"
 import playerBlock from "../images/player_block.png"
 import playerDefence from "../images/player_defense.png"
@@ -7,6 +6,11 @@ import playerService from "../images/player_service.png"
 import playerSet from "../images/player_set.png"
 
 const navigationIcons = [
+	{
+		name: "Service",
+		image: playerService,
+		href: "#service",
+	},
 	{
 		name: "Attack",
 		image: playerAttack,
@@ -28,14 +32,9 @@ const navigationIcons = [
 		href: "#reception",
 	},
 	{
-		name: "Service",
-		image: playerService,
-		href: "#service",
-	},
-	{
 		name: "Set",
 		image: playerSet,
-		href: "/set",
+		href: "#set",
 	},
 ]
 

@@ -1,27 +1,40 @@
 import { useMemo, useState } from "react"
 import * as d3 from "d3"
 
-import serves from "../data/GeneralServeFull.json"
+import attacks from "../data/GeneralAttackFull.json"
 import { useNavigate, useParams } from "react-router-dom"
 import playersList from "../data/players.json"
 import classNames from "classnames"
 import AreaPlot from "./AreaPlot"
 import FilterElem from "./FilterElem"
 
-export type serveData = typeof serves
+export type attackData = typeof attacks
 
-type ServiceFilterType = {
+type AttackFilterType = {
+	attackType?: string | null
+	attackCombo?: string | null
+	attackSpeed?: string | null
+	blockCount?: string | null
+
 	outcome?: string | null
-	type?: string | null
 	fromPos?: number | null
 }
 
+const filterElems: (keyof AttackFilterType)[] = [
+	"attackType",
+	"attackCombo",
+	"attackSpeed",
+	"blockCount",
+	"outcome",
+	"fromPos",
+]
+
 const efficiencyMap = {
-	"#": 3,
-	"/": 2,
+	"#": 2,
 	"+": 1,
 	"!": 0,
 	"-": -1,
+	"/": -2,
 	"=": -2,
 }
 
@@ -29,18 +42,18 @@ const showTopN = 10
 
 const players = d3.index(playersList, (p: any) => p.code)
 
-export default function PlayerService() {
+export default function PlayerAttack() {
 	const navigate = useNavigate()
 	const { playerId } = useParams()
-	const [filter, changeFilter] = useState<ServiceFilterType>({})
+	const [filter, changeFilter] = useState<AttackFilterType>({})
 
-	const unfilteredOwn = useMemo(() => (playerId ? serves.filter(s => s.playerId === playerId) : serves), [playerId])
+	const unfilteredOwn = useMemo(() => (playerId ? attacks.filter(a => a.playerId === playerId) : attacks), [playerId])
 	const filteredServes = useMemo(
 		() =>
-			serves.filter(s => {
-				if (filter.outcome && filter.outcome !== s.outcome) return false
-				if (filter.type && filter.type !== s.type) return false
-				if (filter.fromPos && filter.fromPos !== s.fromPos) return false
+			attacks.filter(a => {
+				for (const filterElem of filterElems) {
+					if (filter[filterElem] && filter[filterElem] !== a[filterElem]) return false
+				}
 				return true
 			}),
 		[filter]
@@ -81,16 +94,18 @@ export default function PlayerService() {
 	)
 
 	return (
-		<div id="service" className="w-full border-neutral-300 p-4">
-			<h3 className="text-2xl mb-3">Service</h3>
+		<div id="attack" className="w-full border-neutral-300 p-4">
+			<h3 className="text-2xl mb-3">Attack</h3>
 			<div className="grid lg:grid-cols-2  gap-3">
 				<div className="bg-base-200 w-full h-full p-4 rounded">
 					<FilterElem
 						data={unfilteredOwn}
-						type="type"
-						active={filter.type}
-						sorting={["M", "Q"]}
-						onClick={type => changeFilter(old => ({ ...old, type: old.type === type ? null : type }))}
+						type="attackSpeed"
+						active={filter.attackSpeed}
+						onClick={aSpeed =>
+							changeFilter(old => ({ ...old, attackSpeed: old.attackSpeed === aSpeed ? null : aSpeed }))
+						}
+						sorting={["H", "S", "T", "P"]}
 					/>
 				</div>
 				<div className="bg-base-200 w-full h-full p-4 rounded">

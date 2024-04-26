@@ -1,22 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.a29129df.chunk.css",
-    "main.js": "/static/js/main.1781dd80.chunk.js",
-    "main.js.map": "/static/js/main.1781dd80.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.c60b7f5c.js",
-    "runtime-main.js.map": "/static/js/runtime-main.c60b7f5c.js.map",
-    "static/js/2.52aa31c1.chunk.js": "/static/js/2.52aa31c1.chunk.js",
-    "static/js/2.52aa31c1.chunk.js.map": "/static/js/2.52aa31c1.chunk.js.map",
+    "main.css": "/static/css/main.9b94abdb.css",
+    "main.js": "/static/js/main.7def61d5.js",
+    "static/media/player_reception.png": "/static/media/player_reception.7bed4ea74c55d9134ef4.png",
+    "static/media/player_attack.png": "/static/media/player_attack.0f61e64e5944ab1ee80d.png",
+    "static/media/player_service.png": "/static/media/player_service.822552d6989df659a7d4.png",
+    "static/media/player_block.png": "/static/media/player_block.6ec7bd1e9f8f016e8967.png",
+    "static/media/player_set.png": "/static/media/player_set.1ccf27e07e578e3b4b74.png",
     "index.html": "/index.html",
-    "static/css/main.a29129df.chunk.css.map": "/static/css/main.a29129df.chunk.css.map",
-    "static/js/2.52aa31c1.chunk.js.LICENSE.txt": "/static/js/2.52aa31c1.chunk.js.LICENSE.txt",
-    "static/media/cropped.955e0ca1.png": "/static/media/cropped.955e0ca1.png",
-    "static/media/gc-logo-symbol-nobg.b927fc8a.png": "/static/media/gc-logo-symbol-nobg.b927fc8a.png"
+    "main.9b94abdb.css.map": "/static/css/main.9b94abdb.css.map",
+    "main.7def61d5.js.map": "/static/js/main.7def61d5.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.c60b7f5c.js",
-    "static/js/2.52aa31c1.chunk.js",
-    "static/css/main.a29129df.chunk.css",
-    "static/js/main.1781dd80.chunk.js"
+    "static/css/main.9b94abdb.css",
+    "static/js/main.7def61d5.js"
   ]
 }

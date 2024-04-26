@@ -1,6 +1,6 @@
 import * as d3 from "d3"
 
-type AreaType = {
+export type AreaType = {
 	toPos?: number | null
 	toPosExact?: string | null
 }
