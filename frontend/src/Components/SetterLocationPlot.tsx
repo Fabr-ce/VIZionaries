@@ -1,12 +1,13 @@
 import * as Plot from "@observablehq/plot"
 import { useEffect, useMemo, useRef } from "react"
-import { convertToTargetArea, AreaTargetType } from "../helper/convertToArea"
+import { convertToSetterArea, AreaSetType } from "../helper/convertToArea"
 import markings from "../helper/volleyballMarkings"
 
-export default function AreaPlot({ data }: { data: AreaTargetType[] }) {
+export default function SetterLocationPlot({ data, colorBy }: { data: AreaSetType[]; colorBy?: string | null }) {
+	colorBy ||= "percent"
 	const containerRef = useRef<HTMLDivElement>(null)
 
-	const areaData = useMemo(() => convertToTargetArea(data), [data])
+	const areaData = useMemo(() => convertToSetterArea(data), [data])
 
 	useEffect(() => {
 		const plot = Plot.plot({
@@ -21,9 +22,24 @@ export default function AreaPlot({ data }: { data: AreaTargetType[] }) {
 				Plot.rect(areaData, {
 					x: "x",
 					y: "y",
-					fill: "count",
-					interval: 1,
+					fill: colorBy,
+					interval: 2,
 					opacity: 0.8,
+				}),
+				Plot.text(areaData, {
+					text: d =>
+						[
+							d.percent + "% (n:" + d.count + ")",
+							"Attack: " + d.directScore + "%",
+							"Win: " + d.ptScore + "%",
+						].join("\n"),
+					textAnchor: "middle",
+					lineAnchor: "middle",
+					fillOpacity: 1,
+					fill: d => (d[colorBy] > 30 ? "white" : "black"),
+					fontSize: 20,
+					x: d => d.x + 1,
+					y: d => d.y + 1,
 				}),
 				...markings({}),
 			],
@@ -31,7 +47,7 @@ export default function AreaPlot({ data }: { data: AreaTargetType[] }) {
 
 		containerRef.current?.append(plot)
 		return () => plot.remove()
-	}, [areaData])
+	}, [areaData, colorBy])
 
 	return <div className="flex justify-center align-center w-full" ref={containerRef} />
 }

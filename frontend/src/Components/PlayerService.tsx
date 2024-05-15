@@ -1,12 +1,14 @@
 import { useMemo, useState } from "react"
 import * as d3 from "d3"
 
-import serves from "../data/GeneralServeFull.json"
+import serves from "../data/GeneralServe.json"
 import { useNavigate, useParams } from "react-router-dom"
-import playersList from "../data/players.json"
 import classNames from "classnames"
 import AreaPlot from "./AreaPlot"
 import FilterElem from "./FilterElem"
+import getPlayer from "../helper/getPlayer"
+import DivergingChart from "./DivergingChart"
+import EfficiencyTable from "./EfficiencyTable"
 
 export type serveData = typeof serves
 
@@ -26,8 +28,6 @@ const efficiencyMap = {
 }
 
 const showTopN = 10
-
-const players = d3.index(playersList, (p: any) => p.code)
 
 export default function PlayerService() {
 	const navigate = useNavigate()
@@ -86,15 +86,18 @@ export default function PlayerService() {
 			<div className="grid lg:grid-cols-2  gap-3">
 				<div className="bg-base-200 w-full h-full p-4 rounded">
 					<FilterElem
+						title="Type"
 						data={unfilteredOwn}
 						type="type"
 						active={filter.type}
 						sorting={["M", "Q"]}
+						display={["Float", "Spin"]}
 						onClick={type => changeFilter(old => ({ ...old, type: old.type === type ? null : type }))}
 					/>
 				</div>
 				<div className="bg-base-200 w-full h-full p-4 rounded">
 					<FilterElem
+						title="Outcome"
 						data={unfilteredOwn}
 						type="outcome"
 						active={filter.outcome}
@@ -102,38 +105,20 @@ export default function PlayerService() {
 							changeFilter(old => ({ ...old, outcome: old.outcome === outcome ? null : outcome }))
 						}
 						sorting={["#", "/", "+", "!", "-", "="]}
+						display={["Pt", "/", "+", "!", "-", "Err"]}
 					/>
 				</div>
 				<div className="w-full h-full p-4 rounded bg-base-200">
 					<AreaPlot data={ownServes} />
 				</div>
-				<table className="table w-full rounded bg-base-200">
-					<thead>
-						<tr>
-							<th>Rank</th>
-							<th>Id</th>
-							<th>Number</th>
-							<th>Efficiency %</th>
-						</tr>
-					</thead>
-					<tbody>
-						{topN.map(d => (
-							<tr
-								key={d.playerId}
-								className={classNames("table-row cursor-pointer", {
-									"bg-accent/20 hover:bg-accent/30": d.playerId === playerId,
-									"hover:bg-base-300": d.playerId !== playerId,
-								})}
-								onClick={() => navigate("/" + d.playerId)}
-							>
-								<td>{d.rank}</td>
-								<td>{players.get(d.playerId)?.firstName + " " + players.get(d.playerId)?.lastName}</td>
-								<td>{d.value.number}</td>
-								<td>{d.value.format}</td>
-							</tr>
-						))}
-					</tbody>
-				</table>
+				<EfficiencyTable
+					data={filteredServes}
+					efficiencyMap={efficiencyMap}
+					filterLimit={0.1 * unfilteredOwn.length < filteredServes.length ? 5 : null}
+				/>
+				<div className="w-full h-full p-4 rounded bg-base-200">
+					<DivergingChart data={filteredServes} efficiencyMap={efficiencyMap} />
+				</div>
 			</div>
 		</div>
 	)

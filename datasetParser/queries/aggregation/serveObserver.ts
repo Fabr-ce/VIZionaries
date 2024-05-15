@@ -1,6 +1,8 @@
 import { Action, Actions, Point, Serve } from "../../parser/stats/types"
+import { matchData } from "../../parser/types"
 import { VolleyPosition } from "../types"
 import { DataAggregation, MeanScoreObserver } from "./observer"
+import fs from "fs/promises"
 
 export class AceServe extends MeanScoreObserver {
 	static position = [VolleyPosition.Outside, VolleyPosition.Middle, VolleyPosition.Opposite, VolleyPosition.Setter]
@@ -56,4 +58,58 @@ export class GeneralServe extends DataAggregation<ServiceList> {
 	}
 }
 
-export const serveAggregations = [new GeneralServe("./aggregation/data/GeneralServe.json")]
+type PlayerList = {
+	number: number
+	code: string
+	firstName: string
+	lastName: string
+	isLibero: boolean
+	team: string
+}
+
+export class GeneralPlayer extends DataAggregation<PlayerList> {
+	action: Actions = Actions.Serve
+	players: Map<string, PlayerList> = new Map()
+
+	setMatch(match: matchData) {
+		for (const homeTeam of match.homeTeam.players) {
+			const { code, firstName, isLibero, lastName, number } = homeTeam
+			this.players.set(homeTeam.code, {
+				code,
+				firstName: firstName.toLowerCase().replace(/(^\w)|([-\s]\w)/g, m => m.toUpperCase()),
+				isLibero,
+				lastName: lastName.toLowerCase().replace(/(^\w)|([-\s]\w)/g, m => m.toUpperCase()),
+				number,
+				team: match.homeTeam.name,
+			})
+		}
+		for (const awayTeam of match.awayTeam.players) {
+			const { code, firstName, isLibero, lastName, number } = awayTeam
+			this.players.set(awayTeam.code, {
+				code,
+				firstName: firstName.toLowerCase().replace(/(^\w)|([-\s]\w)/g, m => m.toUpperCase()),
+				isLibero,
+				lastName: lastName.toLowerCase().replace(/(^\w)|([-\s]\w)/g, m => m.toUpperCase()),
+				number,
+				team: match.awayTeam.name,
+			})
+		}
+	}
+
+	async export() {
+		const data = JSON.stringify(Array.from(this.players.values()))
+		await fs.writeFile(this.path, data)
+	}
+
+	include(action: Action, point: Point): boolean {
+		return false
+	}
+	mapToValue(action: Action, point: Point, playerId: string): PlayerList {
+		return {} as PlayerList
+	}
+}
+
+export const serveAggregations = [
+	new GeneralServe("./aggregation/data/GeneralServe.json"),
+	new GeneralPlayer("./aggregation/data/GeneralPlayer.json"),
+]

@@ -1,8 +1,14 @@
 import * as d3 from "d3"
 
-export type AreaType = {
+export type AreaTargetType = {
 	toPos?: number | null
 	toPosExact?: string | null
+}
+
+export type AreaSetType = {
+	pos?: number | null
+	attackScore: boolean
+	pointWon: boolean
 }
 
 type AreaResult = {
@@ -36,13 +42,13 @@ const positions = [
 ]
 
 const exactPositions = [
-	{ name: "C", xOff: 0, yOff: 0 },
-	{ name: "B", xOff: 1, yOff: 0 },
-	{ name: "D", xOff: 0, yOff: 1 },
-	{ name: "A", xOff: 1, yOff: 1 },
+	{ name: "A", xOff: 0, yOff: 0 },
+	{ name: "D", xOff: 1, yOff: 0 },
+	{ name: "B", xOff: 0, yOff: 1 },
+	{ name: "C", xOff: 1, yOff: 1 },
 ]
 
-const convertToArea = (data: AreaType[]) => {
+export const convertToTargetArea = (data: AreaTargetType[]) => {
 	data = data.filter(d => !!d.toPos)
 	const fieldBuckets = d3.rollup(
 		data,
@@ -76,4 +82,28 @@ const convertToArea = (data: AreaType[]) => {
 	return results
 }
 
-export default convertToArea
+export const convertToSetterArea = (data: AreaSetType[]) => {
+	const f = d3.format(".2f")
+	data = data.filter(d => !!d.pos)
+
+	const fieldBuckets = d3.rollup(
+		data,
+		v => ({
+			percent: Math.round((100 * v.length) / data.length),
+			count: v.length,
+			directScore: Math.round((100 * v.filter(s => s.attackScore).length) / v.length),
+			ptScore: Math.round((100 * v.filter(s => s.pointWon).length) / v.length),
+		}),
+		d => d.pos
+	)
+
+	const results: AreaResult[] = []
+	for (const pos of positions) {
+		const result = fieldBuckets.get(pos.name) ?? { percent: 0, count: 0, directScore: 0, ptScore: 0 }
+		const x = pos.xOff * 2
+		const y = (2 - pos.yOff) * 2
+		results.push({ cell: pos.name + "", ...result, x, y })
+	}
+
+	return results
+}

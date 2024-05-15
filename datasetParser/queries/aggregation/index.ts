@@ -3,17 +3,35 @@ import { aggregateAll } from "./aggregators"
 import { DataAggregation, MeanScoreObserver, ScoreObserver } from "./observer"
 import { serveMeanObserver, serveAggregations } from "./serveObserver"
 import { attackMeanObserver, attackAggregations } from "./attackObserver"
+import { setMeanObserver, setAggregations } from "./setObserver"
+import { blockMeanObserver, blockAggregations } from "./blockObserver"
+import { defenceMeanObserver, defenceAggregations } from "./defenceObserver"
+import { receptionMeanObserver, receptionAggregations } from "./receptionObserver"
 import { VolleyPosition } from "../types"
 
 // mean score observers
-const meanScoreConstructors = [...serveMeanObserver, ...attackMeanObserver]
+const meanScoreConstructors = [
+	...serveMeanObserver,
+	...attackMeanObserver,
+	...setMeanObserver,
+	...blockMeanObserver,
+	...defenceMeanObserver,
+	...receptionMeanObserver,
+]
 const meanScoreObservers: MeanScoreObserver[] = []
 for (const obs of meanScoreConstructors) {
 	meanScoreObservers.push(...obs.createObserver())
 }
 
 // table observers
-const tableScoreObservers: DataAggregation<any>[] = [...attackAggregations, ...serveAggregations]
+const tableScoreObservers: DataAggregation<any>[] = [
+	...attackAggregations,
+	...serveAggregations,
+	...setAggregations,
+	...blockAggregations,
+	...defenceAggregations,
+	...receptionAggregations,
+]
 
 const computeMeanAggregations = (matchData: matchData[]) => {
 	const totalObservers: ScoreObserver[] = [...meanScoreObservers, ...tableScoreObservers]
