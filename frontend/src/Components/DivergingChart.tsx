@@ -1,8 +1,8 @@
 import * as Plot from "@observablehq/plot"
 import * as d3 from "d3"
 import { useEffect, useRef } from "react"
-import getPlayer from "../helper/getPlayer"
 import { useParams } from "react-router-dom"
+import { getPlayer } from "../helper/playerHelper"
 
 export default function DivergingChart({
 	data,
@@ -88,7 +88,7 @@ export default function DivergingChart({
 
 		containerRef.current?.append(plot)
 		return () => plot.remove()
-	}, [data, playerId])
+	}, [data, playerId, efficiencyMap])
 
 	return <div className="flex justify-center align-center w-full" ref={containerRef} />
 }

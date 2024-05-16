@@ -31,7 +31,7 @@ export default function SetterLocationPlot({ data, colorBy }: { data: AreaSetTyp
 						[
 							d.percent + "% (n:" + d.count + ")",
 							"Attack: " + d.directScore + "%",
-							"Win: " + d.ptScore + "%",
+							"Point: " + d.ptScore + "%",
 						].join("\n"),
 					textAnchor: "middle",
 					lineAnchor: "middle",

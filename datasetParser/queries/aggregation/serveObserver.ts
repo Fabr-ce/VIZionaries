@@ -1,5 +1,6 @@
 import { Action, Actions, Point, Serve } from "../../parser/stats/types"
 import { matchData } from "../../parser/types"
+import { getPositionFromAction } from "../helper"
 import { VolleyPosition } from "../types"
 import { DataAggregation, MeanScoreObserver } from "./observer"
 import fs from "fs/promises"
@@ -63,45 +64,70 @@ type PlayerList = {
 	code: string
 	firstName: string
 	lastName: string
-	isLibero: boolean
+	position: string
 	team: string
 }
+
+const positions = [
+	VolleyPosition.Outside,
+	VolleyPosition.Setter,
+	VolleyPosition.Opposite,
+	VolleyPosition.Libero,
+	VolleyPosition.Middle,
+]
 
 export class GeneralPlayer extends DataAggregation<PlayerList> {
 	action: Actions = Actions.Serve
 	players: Map<string, PlayerList> = new Map()
+	gameMap: Map<string, string> = new Map()
 
 	setMatch(match: matchData) {
+		this.gameMap = new Map()
 		for (const homeTeam of match.homeTeam.players) {
 			const { code, firstName, isLibero, lastName, number } = homeTeam
+			const lastPositions = this.players.get(homeTeam.code)?.position ?? ""
 			this.players.set(homeTeam.code, {
 				code,
 				firstName: firstName.toLowerCase().replace(/(^\w)|([-\s]\w)/g, m => m.toUpperCase()),
-				isLibero,
+				position: isLibero ? "L" : lastPositions,
 				lastName: lastName.toLowerCase().replace(/(^\w)|([-\s]\w)/g, m => m.toUpperCase()),
 				number,
 				team: match.homeTeam.name,
 			})
+			this.gameMap.set("H" + number, code)
 		}
 		for (const awayTeam of match.awayTeam.players) {
 			const { code, firstName, isLibero, lastName, number } = awayTeam
+			const lastPositions = this.players.get(awayTeam.code)?.position ?? ""
 			this.players.set(awayTeam.code, {
 				code,
 				firstName: firstName.toLowerCase().replace(/(^\w)|([-\s]\w)/g, m => m.toUpperCase()),
-				isLibero,
+				position: isLibero ? "L" : lastPositions,
 				lastName: lastName.toLowerCase().replace(/(^\w)|([-\s]\w)/g, m => m.toUpperCase()),
 				number,
 				team: match.awayTeam.name,
 			})
+			this.gameMap.set("A" + number, code)
 		}
 	}
 
 	async export() {
+		for (const player of this.players.values()) {
+			const posStr = player.position
+			const occurences = positions.map(p => posStr.split(p).length - 1)
+			const bestOccurance = Math.max(...occurences)
+			const bestIndex = occurences.findIndex(d => d === bestOccurance)
+			player.position = bestOccurance === 0 ? "" : positions[bestIndex]
+		}
 		const data = JSON.stringify(Array.from(this.players.values()))
 		await fs.writeFile(this.path, data)
 	}
 
 	include(action: Action, point: Point): boolean {
+		const gameKey = (action.home ? "H" : "A") + action.player
+		const player = this.players.get(this.gameMap.get(gameKey)!)!
+		const position = getPositionFromAction(action, point)
+		player.position += position
 		return false
 	}
 	mapToValue(action: Action, point: Point, playerId: string): PlayerList {

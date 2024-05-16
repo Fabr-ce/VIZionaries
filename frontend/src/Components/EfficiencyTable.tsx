@@ -1,6 +1,6 @@
 import classNames from "classnames"
 import { useMemo, useState } from "react"
-import getPlayer from "../helper/getPlayer"
+import { getPlayer } from "../helper/playerHelper"
 import * as d3 from "d3"
 import { useNavigate, useParams } from "react-router-dom"
 
@@ -41,7 +41,7 @@ export default function EfficiencyTable({
 			)
 			.filter(v => filterLimit === null || v[1].number >= filterLimit)
 			.sort((a, b) => b[1].mean - a[1].mean || b[1].number - a[1].number)
-	}, [data])
+	}, [data, efficiencyMap, filterLimit])
 
 	const selfIndex = useMemo(() => generalEfficiency.findIndex(a => a[0] === playerId), [generalEfficiency, playerId])
 
@@ -56,18 +56,19 @@ export default function EfficiencyTable({
 			else if (selfIndex >= showTopN + offset) firstN.push(playerObj)
 		}
 		return firstN
-	}, [generalEfficiency, selfIndex, offset])
+	}, [generalEfficiency, selfIndex, offset, showTopN])
 
 	const nrPages = Math.ceil(generalEfficiency.length / showTopN)
 
 	return (
-		<div className="h-full flex flex-col justify-between  min-h-[37rem]">
+		<div className="flex flex-col justify-between h-[36.8rem] bg-base-200 w-full p-4 rounded">
 			<table className="table w-full rounded bg-base-200">
 				<thead>
 					<tr>
 						<th>Rank</th>
-						<th>Id</th>
-						<th>Number</th>
+						<th>Position</th>
+						<th>Player</th>
+						<th>Count</th>
 						<th>Efficiency %</th>
 					</tr>
 				</thead>
@@ -79,9 +80,10 @@ export default function EfficiencyTable({
 								"bg-accent/20 hover:bg-accent/30": d.playerId === playerId,
 								"hover:bg-base-300": d.playerId !== playerId,
 							})}
-							onClick={() => navigate("/" + d.playerId)}
+							onClick={() => navigate("/players/" + d.playerId)}
 						>
 							<td>{d.rank}</td>
+							<td>{getPlayer(d.playerId)?.position}</td>
 							<td>{getPlayer(d.playerId)?.firstName + " " + getPlayer(d.playerId)?.lastName}</td>
 							<td>{d.value.number}</td>
 							<td>{d.value.format}</td>
