@@ -1,10 +1,10 @@
 import SetterLocationPlot from "./SetterLocationPlot"
 import sets from "../data/GeneralSetFull.json"
 import { useMemo, useState } from "react"
-import { useParams } from "react-router-dom"
 import FilterElem from "./FilterElem"
 import EfficiencyTable from "./EfficiencyTable"
 import { filterDataset, filterSelfDataset } from "../helper/filterDataset"
+import { useLocation } from "react-router-dom"
 
 type SetFilterType = {
 	colorBy: string
@@ -25,7 +25,8 @@ const efficiencyMap = {
 }
 
 export default function PlayerSet() {
-	const params = useParams()
+	const location = useLocation()
+	const params = location.state ?? {}
 	const [filter, changeFilter] = useState<SetFilterType>({ colorBy: "percent" })
 
 	const unfilteredOwn: { reception: string | null }[] = useMemo(() => filterSelfDataset(sets, params), [params])

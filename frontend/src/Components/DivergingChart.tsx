@@ -1,7 +1,7 @@
 import * as Plot from "@observablehq/plot"
 import * as d3 from "d3"
 import { useEffect, useRef } from "react"
-import { useParams } from "react-router-dom"
+import { useLocation } from "react-router-dom"
 import { getPlayer } from "../helper/playerHelper"
 
 export default function DivergingChart({
@@ -11,8 +11,11 @@ export default function DivergingChart({
 	data: { outcome: string; playerId: string }[]
 	efficiencyMap: { [key: string]: number }
 }) {
-	const { playerId } = useParams()
+	const location = useLocation()
+	const { playerId } = location.state ?? {}
 	const containerRef = useRef<HTMLDivElement>(null)
+
+	const useAll = data.length < 50
 
 	useEffect(() => {
 		const basicArr: [string, number][] = Array.from(Object.keys(efficiencyMap)).map(e => [
@@ -24,7 +27,7 @@ export default function DivergingChart({
 		const aggregations = d3
 			.groups(data, d => d.playerId)
 			.flatMap(([pId, elems]) => {
-				if (elems.length < 5 && pId !== playerId) return []
+				if (!useAll && elems.length < 5 && pId !== playerId) return []
 				const results: any[] = []
 				for (const outcome of order) {
 					const filtered = elems.filter(e => e.outcome === outcome).length
@@ -45,7 +48,7 @@ export default function DivergingChart({
 			className: "w-full",
 			marginLeft: 200,
 			marginBottom: 50,
-			title: "Outcome Distribution (min. 5 attemps)",
+			title: "Outcome Distribution" + (!useAll ? " (min. 5 attemps)" : ""),
 			x: normalize ? { tickFormat: "%", label: "action (%)" } : { tickFormat: Math.abs, label: "# of actions" },
 			y: { tickSize: 0 },
 			color: { domain: order, scheme: "RdBu", legend: true },

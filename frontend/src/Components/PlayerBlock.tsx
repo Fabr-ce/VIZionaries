@@ -1,5 +1,5 @@
 import { useMemo, useState } from "react"
-import { useParams } from "react-router-dom"
+import { useLocation } from "react-router-dom"
 import blocks from "../data/GeneralBlockFull.json"
 import FilterElem from "./FilterElem"
 import EfficiencyTable from "./EfficiencyTable"
@@ -23,7 +23,8 @@ const efficiencyMap = {
 }
 
 export default function PlayerBlock() {
-	const params = useParams()
+	const location = useLocation()
+	const params = location.state ?? {}
 	const [filter, changeFilter] = useState<BlockFilterType>({})
 
 	const unfilteredOwn = useMemo(() => filterSelfDataset(blocks, params), [params])

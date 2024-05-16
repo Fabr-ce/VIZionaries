@@ -1,4 +1,4 @@
-import { useNavigate, useParams } from "react-router-dom"
+import { useLocation, useNavigate } from "react-router-dom"
 import playerAttack from "../images/player_attack.png"
 import playerBlock from "../images/player_block.png"
 import playerDefence from "../images/player_defense.png"
@@ -45,14 +45,14 @@ const positions = ["S", "O", "A", "M", "L"]
 
 export default function PlayerHead() {
 	const navigation = useNavigate()
-	const { playerId, position, teamId } = useParams()
+	const location = useLocation()
+	const { playerId, position, teamId } = location.state ?? {}
 	const player = playerId ? getPlayer(playerId) : null
 	return (
 		<div className="flex flex-col justify-center items-center w-full gap-2 mt-5">
 			{player && (
 				<>
-					<div className="rounded-full bg-neutral-200 w-36 h-36"></div>
-					<div className="text-3xl font-bold w-full text-center">
+					<div className="text-5xl font-bold w-full mb-3 text-center">
 						{player?.firstName + " " + player?.lastName}
 					</div>
 				</>
@@ -61,7 +61,7 @@ export default function PlayerHead() {
 			{(playerId || position || teamId) && (
 				<button
 					className="absolute right-5 top-5 btn btn-sm btn-error btn-square btn-outline"
-					onClick={() => navigation("/")}
+					onClick={() => navigation("/", { state: {} })}
 				>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -84,7 +84,15 @@ export default function PlayerHead() {
 								"btn-outline": (player ? player.position : position) !== p,
 								"btn-active": (player ? player.position : position) === p,
 							})}
-							onClick={() => navigation("/position/" + p)}
+							onClick={() =>
+								navigation("/", {
+									state: {
+										...location.state,
+										position: p,
+										playerId: player?.position === p ? player.code : undefined,
+									},
+								})
+							}
 						>
 							{p}
 						</div>
@@ -92,7 +100,7 @@ export default function PlayerHead() {
 				</div>
 				<button
 					className={classNames("btn btn-sm btn-error btn-square btn-outline", { "btn-disabled": !position })}
-					onClick={() => navigation("/")}
+					onClick={() => navigation("/", { state: { ...location.state, position: undefined } })}
 				>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -109,11 +117,19 @@ export default function PlayerHead() {
 			<div className="flex gap-2 items-center">
 				<select
 					className="select select-info w-full max-w-xs"
-					onChange={e => navigation("/teams/" + e.target.value)}
-					value={player ? player.team : teamId ?? "-"}
+					onChange={e =>
+						navigation("/", {
+							state: {
+								...location.state,
+								teamId: e.target.value,
+								playerId: player?.team === e.target.value ? player.code : undefined,
+							},
+						})
+					}
+					value={teamId ? teamId : "-"}
 				>
 					<option disabled value={"-"}>
-						Select Team
+						{player ? player.team : "Select Team"}
 					</option>
 					{getTeams().map(t => (
 						<option key={t} value={t}>
@@ -123,7 +139,7 @@ export default function PlayerHead() {
 				</select>
 				<button
 					className={classNames("btn btn-sm btn-error btn-square btn-outline", { "btn-disabled": !teamId })}
-					onClick={() => navigation("/")}
+					onClick={() => navigation("/", { state: { ...location.state, teamId: undefined } })}
 				>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"

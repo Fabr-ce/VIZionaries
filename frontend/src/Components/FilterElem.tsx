@@ -39,7 +39,10 @@ export default function FilterElem<T>({
 				result.push({
 					type: ord,
 					count: percent,
-					text: percent < 0.05 && typeof fullText === "string" ? fullText[0] : fullText,
+					text:
+						typeof fullText === "string"
+							? fullText.substring(0, Math.max(Math.round(percent / 0.03), 1))
+							: fullText,
 				})
 			}
 		}

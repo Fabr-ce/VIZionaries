@@ -1,20 +1,17 @@
 import { useMemo, useState } from "react"
 
-import rawAttacks from "../data/GeneralAttackFull.json"
-import { useParams } from "react-router-dom"
+import attacks from "../data/GeneralAttackFull.json"
+import { useLocation } from "react-router-dom"
 import AreaPlot from "./AreaPlot"
 import FilterElem from "./FilterElem"
 import AttackDiverging from "./DivergingChart"
 import EfficiencyTable from "./EfficiencyTable"
 import { filterDataset, filterSelfDataset } from "../helper/filterDataset"
 
-const attacks = rawAttacks.map(a => ({ ...a, setType: a.attackCombo?.[0] ?? "O" }))
-
 export type attackData = typeof attacks
 
 type AttackFilterType = {
 	attackType?: string | null
-	setType?: string | null
 	attackSpeed?: string | null
 	blockCount?: string | null
 
@@ -22,14 +19,7 @@ type AttackFilterType = {
 	fromPos?: number | null
 }
 
-const filterElems: (keyof AttackFilterType)[] = [
-	"attackType",
-	"setType",
-	"attackSpeed",
-	"blockCount",
-	"outcome",
-	"fromPos",
-]
+const filterElems: (keyof AttackFilterType)[] = ["attackType", "attackSpeed", "blockCount", "outcome", "fromPos"]
 
 const efficiencyMap = {
 	"#": 2,
@@ -41,7 +31,8 @@ const efficiencyMap = {
 }
 
 export default function PlayerAttack() {
-	const params = useParams()
+	const location = useLocation()
+	const params = location.state ?? {}
 	const [filter, changeFilter] = useState<AttackFilterType>({})
 
 	const unfilteredOwn = useMemo(() => filterSelfDataset(attacks, params), [params])
@@ -112,15 +103,18 @@ export default function PlayerAttack() {
 					</div>
 					<div className="bg-base-200 w-full h-full p-4 rounded">
 						<FilterElem
-							title="Set speed"
+							title="Set Type"
 							data={unfilteredOwn}
-							type="setType"
-							active={filter.setType}
-							onClick={setType =>
-								changeFilter(old => ({ ...old, setType: old.setType === setType ? null : setType }))
+							type="attackType"
+							active={filter.attackType}
+							onClick={attackType =>
+								changeFilter(old => ({
+									...old,
+									attackType: old.attackType === attackType ? null : attackType,
+								}))
 							}
-							sorting={["X", "V", "H", "P", "O"]}
-							display={["Quick", "Medium", "High", "SetTip", "Other"]}
+							sorting={["H", "M", "Q", "T", "O"]}
+							display={["High", "Medium", "Quick", "Tense", "Other"]}
 						/>
 					</div>
 					<div className="w-full h-full p-4 rounded bg-base-200">

@@ -1,12 +1,12 @@
 import { useMemo, useState } from "react"
 
 import serves from "../data/GeneralServeFull.json"
-import { useParams } from "react-router-dom"
 import AreaPlot from "./AreaPlot"
 import FilterElem from "./FilterElem"
 import DivergingChart from "./DivergingChart"
 import EfficiencyTable from "./EfficiencyTable"
 import { filterDataset, filterSelfDataset } from "../helper/filterDataset"
+import { useLocation } from "react-router-dom"
 
 export type serveData = typeof serves
 
@@ -26,7 +26,8 @@ const efficiencyMap = {
 }
 
 export default function PlayerService() {
-	const params = useParams()
+	const location = useLocation()
+	const params = location.state ?? {}
 	const [filter, changeFilter] = useState<ServiceFilterType>({})
 
 	const unfilteredOwn = useMemo(() => filterSelfDataset(serves, params), [params])

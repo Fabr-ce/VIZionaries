@@ -1,10 +1,10 @@
 import { useMemo, useState } from "react"
 import receptions from "../data/GeneralReceptionFull.json"
-import { useParams } from "react-router-dom"
 import FilterElem from "./FilterElem"
 import DivergingChart from "./DivergingChart"
 import EfficiencyTable from "./EfficiencyTable"
 import { filterDataset, filterSelfDataset } from "../helper/filterDataset"
+import { useLocation } from "react-router-dom"
 
 type ReceptionFilterType = {
 	outcome?: string | null
@@ -24,7 +24,8 @@ const efficiencyMap = {
 const filterElems: (keyof ReceptionFilterType)[] = ["serviceType", "outcome", "receptionType"]
 
 export default function PlayerReception() {
-	const params = useParams()
+	const location = useLocation()
+	const params = location.state ?? {}
 	const [filter, changeFilter] = useState<ReceptionFilterType>({})
 
 	const unfilteredOwn = useMemo(() => filterSelfDataset(receptions, params), [params])
@@ -72,8 +73,8 @@ export default function PlayerReception() {
 							onClick={outcome =>
 								changeFilter(old => ({ ...old, outcome: old.outcome === outcome ? null : outcome }))
 							}
-							sorting={["#", "/", "+", "!", "-", "="]}
-							display={["Pt", "Ovr", "+", "!", "-", "Err"]}
+							sorting={["#", "+", "!", "-", "/", "="]}
+							display={["Perf", "+", "!", "-", "Ovr", "Err"]}
 						/>
 					</div>
 					<EfficiencyTable

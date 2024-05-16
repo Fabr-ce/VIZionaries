@@ -2,7 +2,7 @@ import classNames from "classnames"
 import { useMemo, useState } from "react"
 import { getPlayer } from "../helper/playerHelper"
 import * as d3 from "d3"
-import { useNavigate, useParams } from "react-router-dom"
+import { useLocation, useNavigate } from "react-router-dom"
 
 export default function EfficiencyTable({
 	showTopN = 10,
@@ -23,7 +23,8 @@ export default function EfficiencyTable({
 	data: { outcome: string; playerId: string }[]
 }) {
 	const navigate = useNavigate()
-	const { playerId } = useParams()
+	const location = useLocation()
+	const { playerId } = location.state ?? {}
 	const [offset, changeOffset] = useState(0)
 
 	const randStr = Math.random() + ""
@@ -39,7 +40,7 @@ export default function EfficiencyTable({
 				},
 				d => d.playerId
 			)
-			.filter(v => filterLimit === null || v[1].number >= filterLimit)
+			.filter(v => data.length < 50 || filterLimit === null || v[1].number >= filterLimit)
 			.sort((a, b) => b[1].mean - a[1].mean || b[1].number - a[1].number)
 	}, [data, efficiencyMap, filterLimit])
 
@@ -80,7 +81,7 @@ export default function EfficiencyTable({
 								"bg-accent/20 hover:bg-accent/30": d.playerId === playerId,
 								"hover:bg-base-300": d.playerId !== playerId,
 							})}
-							onClick={() => navigate("/players/" + d.playerId)}
+							onClick={() => navigate("/", { state: { ...location.state, playerId: d.playerId } })}
 						>
 							<td>{d.rank}</td>
 							<td>{getPlayer(d.playerId)?.position}</td>

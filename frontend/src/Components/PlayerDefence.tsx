@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom"
+import { useLocation } from "react-router-dom"
 import FilterElem from "./FilterElem"
 import { useMemo, useState } from "react"
 import defence from "../data/GeneralDefenceFull.json"
@@ -24,7 +24,8 @@ const efficiencyMap = {
 }
 
 export default function PlayerDefence() {
-	const params = useParams()
+	const location = useLocation()
+	const params = location.state ?? {}
 	const [filter, changeFilter] = useState<DefenceFilterType>({})
 
 	const unfilteredOwn = useMemo(() => filterSelfDataset(defence, params), [params])
@@ -55,8 +56,8 @@ export default function PlayerDefence() {
 							onClick={aType =>
 								changeFilter(old => ({ ...old, attackType: old.attackType === aType ? null : aType }))
 							}
-							sorting={["H", "S", "T", "P"]}
-							display={["Hard", "Soft", "Tip", "P"]}
+							sorting={["H", "M", "Q", "T", "O"]}
+							display={["High", "Medium", "Quick", "Tense", "Other"]}
 						/>
 					</div>
 					<div className="bg-base-200 w-full h-full p-4 rounded">
