@@ -6,20 +6,19 @@ type spyderInput = {
 	[key: string]: { mean: number; number: number; format: string }
 }
 
-export default function SpyderChart({
-	data,
-	labels,
-	names,
-}: {
-	data: spyderInput[]
-	labels: string[]
-	names: string[]
-}) {
+const labels = ["serve", "attack", "reception", "block", "set", "defence"]
+
+export default function SpyderChart({ data, names }: { data: spyderInput[]; names: string[] }) {
 	const containerRef = useRef<HTMLDivElement>(null)
 
 	useEffect(() => {
 		const points = data.flatMap((d, i) => {
-			return Object.keys(d).map(a => ({ name: names[i], key: a, value: (d[a].mean + 2) / 4 }))
+			return labels.map(a => ({
+				name: names[i],
+				key: a,
+				value: ((d[a]?.mean ?? -2) + 2) / 8,
+				count: d[a]?.number ?? 0,
+			}))
 		})
 
 		console.log(points)
@@ -32,10 +31,7 @@ export default function SpyderChart({
 		]
 		*/
 
-		const longitude = d3
-			.scalePoint(new Set(Plot.valueof(points, "key")), [180, -180])
-			.padding(0.5)
-			.align(1)
+		const longitude = d3.scalePoint(labels, [180, -180]).padding(0.5).align(1)
 
 		const plot = Plot.plot({
 			width: 450,
@@ -45,14 +41,16 @@ export default function SpyderChart({
 				// Note: 0.625° corresponds to max. length (here, 0.5), plus enough room for the labels
 				domain: d3.geoCircle().center([0, 90]).radius(0.625)(),
 			},
-			color: { legend: true },
+
+			title: "Efficiency Summary",
+			color: { legend: true, domain: names },
 			marks: [
 				// grey discs
-				Plot.geo([0.5, 0.4, 0.3, 0.2, 0.1], {
+				Plot.geo([0.5, 0.375, 0.25, 0.125], {
 					geometry: r => d3.geoCircle().center([0, 90]).radius(r)(),
 					stroke: "black",
 					fill: "black",
-					strokeOpacity: 0.3,
+					strokeOpacity: 0.4,
 					fillOpacity: 0.03,
 					strokeWidth: 0.5,
 				}),
@@ -63,29 +61,30 @@ export default function SpyderChart({
 					y1: 90 - 0.57,
 					x2: 0,
 					y2: 90,
+
 					stroke: "white",
 					strokeOpacity: 0.5,
 					strokeWidth: 2.5,
 				}),
 
 				// tick labels
-				Plot.text([0.3, 0.4, 0.5], {
+				Plot.text([0.125, 0.25, 0.375, 0.5], {
 					x: 180,
 					y: d => 90 - d,
-					dx: 2,
+					dx: 10,
 					textAnchor: "start",
-					text: d => `${100 * d}%`,
-					fill: "currentColor",
-					stroke: "white",
-					fontSize: 8,
+					text: d => `${8 * d - 2}`,
+					fontWeight: "bold",
+					fontSize: 15,
 				}),
 
 				// axes labels
 				Plot.text(longitude.domain(), {
 					x: longitude,
-					y: 90 - 0.57,
-					text: Plot.identity,
+					y: 90 - 0.6,
+					text: str => str.charAt(0).toUpperCase() + str.slice(1),
 					lineWidth: 5,
+					fontSize: 15,
 				}),
 
 				// areas
@@ -94,6 +93,7 @@ export default function SpyderChart({
 					y1: ({ value }) => 90 - value,
 					x2: 0,
 					y2: 90,
+					fillOpacity: 0.25,
 					fill: "name",
 					stroke: "name",
 					curve: "cardinal-closed",
@@ -113,10 +113,11 @@ export default function SpyderChart({
 					Plot.pointer({
 						x: ({ key }) => longitude(key),
 						y: ({ value }) => 90 - value,
-						text: d => `${(100 * d.value).toFixed(0)}%`,
+						text: d => `${(8 * d.value - 2).toFixed(2)} (${d.count})`,
 						textAnchor: "start",
-						dx: 4,
-						fill: "currentColor",
+						dx: 6,
+						fill: "name",
+						fontSize: 15,
 						stroke: "white",
 						maxRadius: 10,
 					})
