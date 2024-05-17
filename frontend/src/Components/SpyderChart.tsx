@@ -21,15 +21,7 @@ export default function SpyderChart({ data, names }: { data: spyderInput[]; name
 			}))
 		})
 
-		console.log(points)
-
-		/*
-		const points = [
-			{ name: "test", key: "service", value: 0.3 },
-			{ name: "test", key: "reception", value: 0.2 },
-			{ name: "test", key: "block", value: 0.1 },
-		]
-		*/
+		console.log(data, points)
 
 		const longitude = d3.scalePoint(labels, [180, -180]).padding(0.5).align(1)
 
@@ -129,25 +121,7 @@ export default function SpyderChart({ data, names }: { data: spyderInput[]; name
 
 		containerRef.current?.append(plot)
 		return () => plot.remove()
-	}, [data])
+	}, [data, names])
 
 	return <div className="flex justify-center align-center w-full" ref={containerRef} />
-}
-
-function Likert(data: [string, number][]) {
-	const map = new Map(data)
-	return {
-		order: Array.from(map.keys()),
-		offset(I: number[][][], X1: number[], X2: number[], Z: string[]) {
-			for (const stacks of I) {
-				for (const stack of stacks) {
-					const k = d3.sum(stack, i => (X2[i] - X1[i]) * (1 - (map.get(Z[i]) ?? 0))) / 2
-					for (const i of stack) {
-						X1[i] -= k
-						X2[i] -= k
-					}
-				}
-			}
-		},
-	}
 }

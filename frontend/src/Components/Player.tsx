@@ -11,6 +11,7 @@ export default function Player() {
 	return (
 		<div className="w-full h-full scroll-smooth">
 			<PlayerHead />
+
 			<PlayerSummary />
 			<div className="w-full h-full grid justify-center grid-cols-1 2xl:grid-cols-2 gap-7 p-5 px-4">
 				<PlayerService />

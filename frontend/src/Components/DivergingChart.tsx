@@ -52,6 +52,7 @@ export default function DivergingChart({
 			x: normalize ? { tickFormat: "%", label: "action (%)" } : { tickFormat: Math.abs, label: "# of actions" },
 			y: { tickSize: 0 },
 			color: { domain: order, scheme: "RdBu", legend: true },
+			style: { fontSize: "1.2rem" },
 			marks: [
 				Plot.barX(aggregations, {
 					x: "perc",

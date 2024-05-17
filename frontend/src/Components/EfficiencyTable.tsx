@@ -31,19 +31,17 @@ export default function EfficiencyTable({
 
 	const generalEfficiency = useMemo(() => {
 		const f = d3.format(".2f")
-		return (
-			d3
-				.rollups(
-					data,
-					v => {
-						const mean = d3.mean(v, d => efficiencyMap[d.outcome]) ?? 0
-						return { mean, number: v.length, format: f(mean) }
-					},
-					d => d.playerId
-				)
-				//.filter(v => data.length < 50 || filterLimit === null || v[1].number >= filterLimit)
-				.sort((a, b) => b[1].mean - a[1].mean || b[1].number - a[1].number)
-		)
+		return d3
+			.rollups(
+				data,
+				v => {
+					const mean = d3.mean(v, d => efficiencyMap[d.outcome]) ?? 0
+					return { mean, number: v.length, format: f(mean) }
+				},
+				d => d.playerId
+			)
+			.filter(v => data.length < 50 || filterLimit === null || v[1].number >= filterLimit)
+			.sort((a, b) => b[1].mean - a[1].mean || b[1].number - a[1].number)
 	}, [data, efficiencyMap, filterLimit])
 
 	const selfIndex = useMemo(() => generalEfficiency.findIndex(a => a[0] === playerId), [generalEfficiency, playerId])

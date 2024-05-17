@@ -33,7 +33,7 @@ export default function PlayerSummary() {
 			)
 		}
 		return null
-	}, [playerId, teamId, position])
+	}, [teamId, position])
 	const allData = useMemo(() => {
 		const players = Object.keys(aggregation)
 		return aggregateValues(players.map(p => aggregation[p as keyof typeof aggregation]))
@@ -55,8 +55,7 @@ export default function PlayerSummary() {
 	}, [playerData, filteredData, allData, teamId, playerId, position])
 
 	return (
-		<div id="summary" className="w-ful">
-			Summary
+		<div id="summary" className="w-full my-3">
 			<SpyderChart data={data} names={names} />
 		</div>
 	)
@@ -85,7 +84,7 @@ const aggregateValues = (data: AggregateType[]) => {
 	}
 
 	for (const action of Object.keys(result) as (keyof typeof result)[]) {
-		result[action].mean /= result[action].number
+		result[action].mean /= result[action].number === 0 ? 1 : result[action].number
 		result[action].format = f(result[action].mean)
 	}
 	return result

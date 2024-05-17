@@ -47,6 +47,7 @@ export default function PlayerHead() {
 	const navigation = useNavigate()
 	const location = useLocation()
 	const { playerId, position, teamId } = location.state ?? {}
+	const hasFilters = playerId || teamId || position
 	const player = playerId ? getPlayer(playerId) : null
 	return (
 		<div className="flex flex-col justify-center items-center w-full gap-2 mt-5">
@@ -152,6 +153,14 @@ export default function PlayerHead() {
 					</svg>
 				</button>
 			</div>
+
+			{!hasFilters && (
+				<div className="p-5">
+					<div className="alert alert-info">
+						Select filters above or by clicking on a player in the tables below
+					</div>
+				</div>
+			)}
 
 			<div className="grid grid-cols-3 md:grid-cols-6 gap-4 mt-5">
 				{navigationIcons.map(nav => (
