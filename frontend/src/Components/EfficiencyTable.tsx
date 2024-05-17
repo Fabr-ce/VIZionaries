@@ -31,17 +31,19 @@ export default function EfficiencyTable({
 
 	const generalEfficiency = useMemo(() => {
 		const f = d3.format(".2f")
-		return d3
-			.rollups(
-				data,
-				v => {
-					const mean = d3.mean(v, d => efficiencyMap[d.outcome]) ?? 0
-					return { mean, number: v.length, format: f(mean) }
-				},
-				d => d.playerId
-			)
-			.filter(v => data.length < 50 || filterLimit === null || v[1].number >= filterLimit)
-			.sort((a, b) => b[1].mean - a[1].mean || b[1].number - a[1].number)
+		return (
+			d3
+				.rollups(
+					data,
+					v => {
+						const mean = d3.mean(v, d => efficiencyMap[d.outcome]) ?? 0
+						return { mean, number: v.length, format: f(mean) }
+					},
+					d => d.playerId
+				)
+				//.filter(v => data.length < 50 || filterLimit === null || v[1].number >= filterLimit)
+				.sort((a, b) => b[1].mean - a[1].mean || b[1].number - a[1].number)
+		)
 	}, [data, efficiencyMap, filterLimit])
 
 	const selfIndex = useMemo(() => generalEfficiency.findIndex(a => a[0] === playerId), [generalEfficiency, playerId])
@@ -62,7 +64,7 @@ export default function EfficiencyTable({
 	const nrPages = Math.ceil(generalEfficiency.length / showTopN)
 
 	return (
-		<div className="flex flex-col justify-between h-[36.8rem] bg-base-200 w-full p-4 rounded">
+		<div className="flex flex-col justify-between min-h-[36.8rem] bg-base-200 w-full p-4 rounded">
 			<table className="table w-full rounded bg-base-200">
 				<thead>
 					<tr>
@@ -97,7 +99,7 @@ export default function EfficiencyTable({
 					<input
 						key={i}
 						defaultValue={offset / showTopN + 1 + ""}
-						className="join-item btn btn-square flex-grow"
+						className={classNames("join-item btn btn-square flex-grow", { "btn-sm": nrPages >= 8 })}
 						type="radio"
 						name={"page" + randStr}
 						aria-label={i + 1 + ""}

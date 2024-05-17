@@ -26,7 +26,7 @@ const efficiencyMap = {
 
 export default function PlayerSet() {
 	const location = useLocation()
-	const params = location.state ?? {}
+	const params = useMemo(() => location.state ?? {}, [location.state])
 	const [filter, changeFilter] = useState<SetFilterType>({ colorBy: "percent" })
 
 	const unfilteredOwn: { reception: string | null }[] = useMemo(() => filterSelfDataset(sets, params), [params])
@@ -43,7 +43,7 @@ export default function PlayerSet() {
 
 	return (
 		<div id="set" className="w-full border-neutral-300 p-4">
-			<h3 className="text-2xl mb-3">Set</h3>
+			<h3 className="text-2xl mb-3 text-center">Set</h3>
 			{filteredData.length === 0 ? (
 				<div className="alert alert-info">No attack data found for the current filter</div>
 			) : (

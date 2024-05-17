@@ -32,7 +32,7 @@ const efficiencyMap = {
 
 export default function PlayerAttack() {
 	const location = useLocation()
-	const params = location.state ?? {}
+	const params = useMemo(() => location.state ?? {}, [location.state])
 	const [filter, changeFilter] = useState<AttackFilterType>({})
 
 	const unfilteredOwn = useMemo(() => filterSelfDataset(attacks, params), [params])
@@ -54,7 +54,7 @@ export default function PlayerAttack() {
 
 	return (
 		<div id="attack" className="w-full border-neutral-300 p-4">
-			<h3 className="text-2xl mb-3">Attack</h3>
+			<h3 className="text-2xl mb-3 text-center">Attack</h3>
 			{filteredData.length === 0 ? (
 				<div className="alert alert-info">No attack data found for the current filter</div>
 			) : (

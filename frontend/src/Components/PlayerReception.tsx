@@ -25,7 +25,7 @@ const filterElems: (keyof ReceptionFilterType)[] = ["serviceType", "outcome", "r
 
 export default function PlayerReception() {
 	const location = useLocation()
-	const params = location.state ?? {}
+	const params = useMemo(() => location.state ?? {}, [location.state])
 	const [filter, changeFilter] = useState<ReceptionFilterType>({})
 
 	const unfilteredOwn = useMemo(() => filterSelfDataset(receptions, params), [params])
@@ -43,7 +43,7 @@ export default function PlayerReception() {
 
 	return (
 		<div id="reception" className="w-full border-neutral-300 p-4">
-			<h3 className="text-2xl mb-3">Reception</h3>
+			<h3 className="text-2xl mb-3 text-center">Reception</h3>
 			{filteredData.length === 0 ? (
 				<div className="alert alert-info">No reception data found for the current filter</div>
 			) : (

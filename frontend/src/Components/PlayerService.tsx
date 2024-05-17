@@ -27,7 +27,7 @@ const efficiencyMap = {
 
 export default function PlayerService() {
 	const location = useLocation()
-	const params = location.state ?? {}
+	const params = useMemo(() => location.state ?? {}, [location.state])
 	const [filter, changeFilter] = useState<ServiceFilterType>({})
 
 	const unfilteredOwn = useMemo(() => filterSelfDataset(serves, params), [params])
@@ -49,7 +49,7 @@ export default function PlayerService() {
 
 	return (
 		<div id="service" className="w-full border-neutral-300 p-4">
-			<h3 className="text-2xl mb-3">Service</h3>
+			<h3 className="text-2xl mb-3 text-center">Service</h3>
 			{filteredData.length === 0 ? (
 				<div className="alert alert-info">No serve data found for the current filter</div>
 			) : (

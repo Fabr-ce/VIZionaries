@@ -52,7 +52,6 @@ export default function DivergingChart({
 			x: normalize ? { tickFormat: "%", label: "action (%)" } : { tickFormat: Math.abs, label: "# of actions" },
 			y: { tickSize: 0 },
 			color: { domain: order, scheme: "RdBu", legend: true },
-			style: { fontSize: "1.2rem" },
 			marks: [
 				Plot.barX(aggregations, {
 					x: "perc",
@@ -91,7 +90,7 @@ export default function DivergingChart({
 
 		containerRef.current?.append(plot)
 		return () => plot.remove()
-	}, [data, playerId, efficiencyMap])
+	}, [data, playerId, efficiencyMap, useAll])
 
 	return <div className="flex justify-center align-center w-full" ref={containerRef} />
 }

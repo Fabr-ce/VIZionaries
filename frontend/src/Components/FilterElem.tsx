@@ -24,9 +24,9 @@ export default function FilterElem<T>({
 	const containerRef = useRef<HTMLDivElement>(null)
 
 	const aggregationData = useMemo(() => {
-		data = data.filter(d => d[type] !== null)
+		const filteredData = data.filter(d => d[type] !== null)
 		const aggregation = d3.rollup(
-			data,
+			filteredData,
 			v => v.length,
 			d => d[type]
 		)
@@ -34,7 +34,7 @@ export default function FilterElem<T>({
 		const result = []
 		for (const ord of sorting) {
 			if (aggregation.has(ord)) {
-				const percent = (aggregation.get(ord) ?? 0) / data.length
+				const percent = (aggregation.get(ord) ?? 0) / filteredData.length
 				const fullText = display ? display[sorting.indexOf(ord)] : ord
 				result.push({
 					type: ord,
@@ -47,7 +47,7 @@ export default function FilterElem<T>({
 			}
 		}
 		return result
-	}, [data])
+	}, [data, display, sorting, type])
 
 	useEffect(() => {
 		const plot = Plot.plot({
@@ -87,7 +87,7 @@ export default function FilterElem<T>({
 
 		containerRef.current?.append(plot)
 		return () => plot.remove()
-	}, [aggregationData])
+	}, [aggregationData, onClick])
 
 	useEffect(() => {
 		if (!containerRef.current) return

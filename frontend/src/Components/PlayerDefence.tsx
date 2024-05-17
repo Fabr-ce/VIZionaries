@@ -25,7 +25,7 @@ const efficiencyMap = {
 
 export default function PlayerDefence() {
 	const location = useLocation()
-	const params = location.state ?? {}
+	const params = useMemo(() => location.state ?? {}, [location.state])
 	const [filter, changeFilter] = useState<DefenceFilterType>({})
 
 	const unfilteredOwn = useMemo(() => filterSelfDataset(defence, params), [params])
@@ -42,7 +42,7 @@ export default function PlayerDefence() {
 
 	return (
 		<div id="defence" className="w-full border-neutral-300 p-4">
-			<h3 className="text-2xl mb-3">Defence</h3>
+			<h3 className="text-2xl mb-3 text-center">Defence</h3>
 			{filteredData.length === 0 ? (
 				<div className="alert alert-info">No defence data found for the current filter</div>
 			) : (

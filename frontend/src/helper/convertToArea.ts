@@ -83,7 +83,6 @@ export const convertToTargetArea = (data: AreaTargetType[]) => {
 }
 
 export const convertToSetterArea = (data: AreaSetType[]) => {
-	const f = d3.format(".2f")
 	data = data.filter(d => !!d.pos)
 
 	const fieldBuckets = d3.rollup(
