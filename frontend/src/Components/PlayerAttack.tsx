@@ -22,12 +22,12 @@ type AttackFilterType = {
 const filterElems: (keyof AttackFilterType)[] = ["attackType", "attackSpeed", "blockCount", "outcome", "fromPos"]
 
 const efficiencyMap = {
-	"#": 2,
-	"+": 1,
+	"#": 1,
+	"+": 0.5,
 	"!": 0,
-	"-": -1,
-	"/": -2,
-	"=": -2,
+	"-": -0.5,
+	"/": -1,
+	"=": -1,
 }
 
 export default function PlayerAttack() {
@@ -126,7 +126,11 @@ export default function PlayerAttack() {
 						filterLimit={0.1 * unfilteredOwn.length < filteredData.length ? 5 : null}
 					/>
 					<div className="w-full h-full p-4 rounded bg-base-200">
-						<AttackDiverging data={filteredData} efficiencyMap={efficiencyMap} />
+						<AttackDiverging
+							data={filteredData}
+							efficiencyMap={efficiencyMap}
+							limitNumber={0.1 * unfilteredOwn.length < filteredData.length ? 10 : 1}
+						/>
 					</div>
 				</div>
 			)}

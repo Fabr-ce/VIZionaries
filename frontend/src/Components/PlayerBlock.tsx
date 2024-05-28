@@ -15,11 +15,11 @@ type BlockFilterType = {
 const filterElems: (keyof BlockFilterType)[] = ["attackType", "blockCount", "outcome"]
 
 const efficiencyMap = {
-	"#": 2,
-	"+": 1,
+	"#": 1,
+	"+": 0.5,
 	"!": 0,
-	"-": -1,
-	"=": -2,
+	"-": -0.5,
+	"=": -1,
 }
 
 export default function PlayerBlock() {
@@ -78,7 +78,11 @@ export default function PlayerBlock() {
 						filterLimit={0.1 * unfilteredOwn.length < filteredData.length ? 5 : null}
 					/>
 					<div className="w-full h-full p-4 rounded bg-base-200">
-						<DivergingChart data={filteredData} efficiencyMap={efficiencyMap} />
+						<DivergingChart
+							data={filteredData}
+							efficiencyMap={efficiencyMap}
+							limitNumber={0.1 * unfilteredOwn.length < filteredData.length ? 10 : 1}
+						/>
 					</div>
 				</div>
 			)}

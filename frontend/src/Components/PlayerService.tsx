@@ -17,12 +17,12 @@ type ServiceFilterType = {
 }
 
 const efficiencyMap = {
-	"#": 3,
-	"/": 2,
-	"+": 1,
+	"#": 1,
+	"/": 0.6,
+	"+": 0.3,
 	"!": 0,
-	"-": -1,
-	"=": -2,
+	"-": -0.3,
+	"=": -0.6,
 }
 
 export default function PlayerService() {
@@ -87,7 +87,11 @@ export default function PlayerService() {
 						filterLimit={0.1 * unfilteredOwn.length < filteredData.length ? 5 : null}
 					/>
 					<div className="w-full h-full p-4 rounded bg-base-200">
-						<DivergingChart data={filteredData} efficiencyMap={efficiencyMap} />
+						<DivergingChart
+							data={filteredData}
+							efficiencyMap={efficiencyMap}
+							limitNumber={0.1 * unfilteredOwn.length < filteredData.length ? 10 : 1}
+						/>
 					</div>
 				</div>
 			)}

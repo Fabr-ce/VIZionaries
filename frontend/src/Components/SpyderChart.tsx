@@ -21,8 +21,6 @@ export default function SpyderChart({ data, names }: { data: spyderInput[]; name
 			}))
 		})
 
-		console.log(data, points)
-
 		const longitude = d3.scalePoint(labels, [180, -180]).padding(0.5).align(1)
 
 		const plot = Plot.plot({

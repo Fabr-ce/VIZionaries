@@ -13,12 +13,12 @@ type ReceptionFilterType = {
 }
 
 const efficiencyMap = {
-	"#": 2,
-	"+": 1,
+	"#": 1,
+	"+": 0.5,
 	"!": 0,
-	"-": -1,
-	"/": -2,
-	"=": -2,
+	"-": -0.5,
+	"/": -1,
+	"=": -1,
 }
 
 const filterElems: (keyof ReceptionFilterType)[] = ["serviceType", "outcome", "receptionType"]
@@ -83,7 +83,11 @@ export default function PlayerReception() {
 						filterLimit={0.1 * unfilteredOwn.length < filteredData.length ? 5 : null}
 					/>
 					<div className="w-full h-full p-4 rounded bg-base-200">
-						<DivergingChart data={filteredData} efficiencyMap={efficiencyMap} />
+						<DivergingChart
+							data={filteredData}
+							efficiencyMap={efficiencyMap}
+							limitNumber={0.1 * unfilteredOwn.length < filteredData.length ? 10 : 1}
+						/>
 					</div>
 				</div>
 			)}

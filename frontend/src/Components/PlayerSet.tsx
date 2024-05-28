@@ -5,6 +5,7 @@ import FilterElem from "./FilterElem"
 import EfficiencyTable from "./EfficiencyTable"
 import { filterDataset, filterSelfDataset } from "../helper/filterDataset"
 import { useLocation } from "react-router-dom"
+import DivergingChart from "./DivergingChart"
 
 type SetFilterType = {
 	colorBy: string
@@ -16,12 +17,12 @@ type SetFilterType = {
 const filterElems: (keyof Omit<SetFilterType, "colorBy">)[] = ["target", "outcome", "reception"]
 
 const efficiencyMap = {
-	"#": 2,
-	"+": 1,
+	"#": 1,
+	"+": 0.5,
 	"!": 0,
-	"-": -1,
-	"/": -2,
-	"=": -2,
+	"-": -0.5,
+	"/": -1,
+	"=": -1,
 }
 
 export default function PlayerSet() {
@@ -48,6 +49,31 @@ export default function PlayerSet() {
 				<div className="alert alert-info">No attack data found for the current filter</div>
 			) : (
 				<div className="grid lg:grid-cols-2  gap-3">
+					<div className="bg-base-200 w-full h-full p-4 rounded">
+						<FilterElem
+							title="Outcome"
+							data={unfilteredOwn}
+							type="outcome"
+							active={filter.outcome}
+							onClick={outcome =>
+								changeFilter(old => ({ ...old, outcome: old.outcome === outcome ? null : outcome }))
+							}
+							sorting={["#", "+", "!", "-", "/", "="]}
+							display={["Perf", "+", "!", "-", "Ovr", "Err"]}
+						/>
+					</div>
+					<div className="bg-base-200 w-full h-full p-4 rounded">
+						<FilterElem
+							title="Target"
+							data={unfilteredOwn}
+							type="target"
+							active={filter.target}
+							onClick={target =>
+								changeFilter(old => ({ ...old, target: old.target === target ? null : target }))
+							}
+							sorting={["F", "C", "P", "B", "S"]}
+						/>
+					</div>
 					<div className="bg-base-200 w-full h-full p-4 rounded">
 						<FilterElem<string | null>
 							title="Reception"
@@ -80,6 +106,13 @@ export default function PlayerSet() {
 						efficiencyMap={efficiencyMap}
 						filterLimit={0.1 * unfilteredOwn.length < filteredData.length ? 5 : null}
 					/>
+					<div className="w-full h-full p-4 rounded bg-base-200">
+						<DivergingChart
+							data={filteredData}
+							efficiencyMap={efficiencyMap}
+							limitNumber={0.1 * unfilteredOwn.length < filteredData.length ? 30 : 5}
+						/>
+					</div>
 				</div>
 			)}
 		</div>

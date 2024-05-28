@@ -7,9 +7,11 @@ import { getPlayer } from "../helper/playerHelper"
 export default function DivergingChart({
 	data,
 	efficiencyMap,
+	limitNumber = 5,
 }: {
 	data: { outcome: string; playerId: string }[]
 	efficiencyMap: { [key: string]: number }
+	limitNumber?: number
 }) {
 	const location = useLocation()
 	const { playerId } = location.state ?? {}
@@ -27,7 +29,7 @@ export default function DivergingChart({
 		const aggregations = d3
 			.groups(data, d => d.playerId)
 			.flatMap(([pId, elems]) => {
-				if (!useAll && elems.length < 5 && pId !== playerId) return []
+				if (!useAll && elems.length < limitNumber && pId !== playerId) return []
 				const results: any[] = []
 				for (const outcome of order) {
 					const filtered = elems.filter(e => e.outcome === outcome).length
@@ -48,7 +50,9 @@ export default function DivergingChart({
 			className: "w-full",
 			marginLeft: 200,
 			marginBottom: 50,
-			title: "Outcome Distribution" + (!useAll ? " (min. 5 attemps)" : ""),
+			title:
+				"Outcome Distribution" +
+				(!useAll ? " (min. " + limitNumber + " attempt" + (limitNumber === 1 ? "" : "s") + ")" : ""),
 			x: normalize ? { tickFormat: "%", label: "action (%)" } : { tickFormat: Math.abs, label: "# of actions" },
 			y: { tickSize: 0 },
 			color: { domain: order, scheme: "RdBu", legend: true },
@@ -91,7 +95,7 @@ export default function DivergingChart({
 
 		containerRef.current?.append(plot)
 		return () => plot.remove()
-	}, [data, playerId, efficiencyMap, useAll])
+	}, [data, playerId, efficiencyMap, useAll, limitNumber])
 
 	return <div className="flex justify-center align-center w-full" ref={containerRef} />
 }

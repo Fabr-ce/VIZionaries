@@ -7,12 +7,12 @@ import { useLocation, useNavigate } from "react-router-dom"
 export default function EfficiencyTable({
 	showTopN = 10,
 	efficiencyMap = {
-		"#": 2,
-		"+": 1,
+		"#": 1,
+		"+": 0.5,
 		"!": 0,
-		"-": -1,
-		"/": -2,
-		"=": -2,
+		"-": -0.5,
+		"/": -1,
+		"=": -1,
 	},
 	filterLimit = 10,
 	data,

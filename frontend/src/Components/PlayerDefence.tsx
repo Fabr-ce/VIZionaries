@@ -15,12 +15,12 @@ type DefenceFilterType = {
 const filterElems: (keyof DefenceFilterType)[] = ["attackType", "defenceType", "outcome"]
 
 const efficiencyMap = {
-	"#": 2,
-	"+": 1,
+	"#": 1,
+	"+": 0.5,
 	"!": 0,
-	"-": -1,
-	"/": -2,
-	"=": -2,
+	"-": -0.5,
+	"/": -1,
+	"=": -1,
 }
 
 export default function PlayerDefence() {
@@ -79,7 +79,11 @@ export default function PlayerDefence() {
 						filterLimit={0.1 * unfilteredOwn.length < filteredData.length ? 5 : null}
 					/>
 					<div className="w-full h-full p-4 rounded bg-base-200">
-						<DivergingChart data={filteredData} efficiencyMap={efficiencyMap} />
+						<DivergingChart
+							data={filteredData}
+							efficiencyMap={efficiencyMap}
+							limitNumber={0.1 * unfilteredOwn.length < filteredData.length ? 20 : 1}
+						/>
 					</div>
 				</div>
 			)}
