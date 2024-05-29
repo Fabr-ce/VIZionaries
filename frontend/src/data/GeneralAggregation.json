@@ -1,677 +1,677 @@
 {
 	"-453094": {
-		"serve": { "mean": 0.4444444444444444, "number": 9, "format": "0.44" },
-		"attack": { "mean": 2, "number": 1, "format": "2.00" },
-		"defence": { "mean": -2, "number": 1, "format": "-2.00" },
-		"reception": { "mean": -0.5, "number": 4, "format": "-0.50" }
+		"serve": { "mean": 0.14814814814814814, "number": 9, "format": "0.15" },
+		"attack": { "mean": 1, "number": 1, "format": "1.00" },
+		"defence": { "mean": -1, "number": 1, "format": "-1.00" },
+		"reception": { "mean": -0.25, "number": 4, "format": "-0.25" }
 	},
 	"-398028": {
-		"serve": { "mean": -0.013513513513513514, "number": 74, "format": "-0.01" },
-		"attack": { "mean": 0.21428571428571427, "number": 14, "format": "0.21" },
-		"block": { "mean": 0.2631578947368421, "number": 19, "format": "0.26" },
-		"defence": { "mean": 0.3, "number": 50, "format": "0.30" },
-		"reception": { "mean": -1, "number": 1, "format": "-1.00" },
-		"set": { "mean": 1.9002849002849003, "number": 351, "format": "1.90" }
+		"serve": { "mean": -0.0045045045045045045, "number": 74, "format": "0.00" },
+		"attack": { "mean": 0.10714285714285714, "number": 14, "format": "0.11" },
+		"block": { "mean": 0.13157894736842105, "number": 19, "format": "0.13" },
+		"defence": { "mean": 0.15, "number": 50, "format": "0.15" },
+		"reception": { "mean": -0.5, "number": 1, "format": "-0.50" },
+		"set": { "mean": 0.9501424501424501, "number": 351, "format": "0.95" }
 	},
 	"-427389": {
-		"serve": { "mean": -0.025, "number": 160, "format": "-0.03" },
-		"attack": { "mean": 0.2891246684350133, "number": 377, "format": "0.29" },
-		"block": { "mean": 0.016129032258064516, "number": 62, "format": "0.02" },
-		"defence": { "mean": 0.18055555555555555, "number": 72, "format": "0.18" },
-		"reception": { "mean": 0.5, "number": 4, "format": "0.50" },
-		"set": { "mean": 1.72, "number": 25, "format": "1.72" }
+		"serve": { "mean": -0.008333333333333333, "number": 160, "format": "-0.01" },
+		"attack": { "mean": 0.14456233421750664, "number": 377, "format": "0.14" },
+		"block": { "mean": 0.008064516129032258, "number": 62, "format": "0.01" },
+		"defence": { "mean": 0.09027777777777778, "number": 72, "format": "0.09" },
+		"reception": { "mean": 0.25, "number": 4, "format": "0.25" },
+		"set": { "mean": 0.86, "number": 25, "format": "0.86" }
 	},
 	"-368677": {
-		"serve": { "mean": -0.02586206896551724, "number": 116, "format": "-0.03" },
-		"attack": { "mean": 0.2966507177033493, "number": 209, "format": "0.30" },
-		"block": { "mean": -0.22916666666666666, "number": 48, "format": "-0.23" },
-		"defence": { "mean": -0.09523809523809523, "number": 63, "format": "-0.10" },
-		"reception": { "mean": 0.2247191011235955, "number": 178, "format": "0.22" },
-		"set": { "mean": 1.4545454545454546, "number": 22, "format": "1.45" }
+		"serve": { "mean": -0.008620689655172414, "number": 116, "format": "-0.01" },
+		"attack": { "mean": 0.14832535885167464, "number": 209, "format": "0.15" },
+		"block": { "mean": -0.11458333333333333, "number": 48, "format": "-0.11" },
+		"defence": { "mean": -0.047619047619047616, "number": 63, "format": "-0.05" },
+		"reception": { "mean": 0.11235955056179775, "number": 178, "format": "0.11" },
+		"set": { "mean": 0.7272727272727273, "number": 22, "format": "0.73" }
 	},
 	"-453095": {
-		"serve": { "mean": -0.041666666666666664, "number": 48, "format": "-0.04" },
-		"attack": { "mean": 0.06818181818181818, "number": 88, "format": "0.07" },
-		"block": { "mean": 0.4166666666666667, "number": 12, "format": "0.42" },
-		"defence": { "mean": 0.4, "number": 20, "format": "0.40" },
+		"serve": { "mean": -0.013888888888888888, "number": 48, "format": "-0.01" },
+		"attack": { "mean": 0.03409090909090909, "number": 88, "format": "0.03" },
+		"block": { "mean": 0.20833333333333334, "number": 12, "format": "0.21" },
+		"defence": { "mean": 0.2, "number": 20, "format": "0.20" },
 		"reception": { "mean": 0, "number": 57, "format": "0.00" },
-		"set": { "mean": 1.7142857142857142, "number": 7, "format": "1.71" }
+		"set": { "mean": 0.8571428571428571, "number": 7, "format": "0.86" }
 	},
 	"-441135": {
-		"serve": { "mean": -0.05454545454545454, "number": 110, "format": "-0.05" },
-		"attack": { "mean": 0.43209876543209874, "number": 81, "format": "0.43" },
-		"block": { "mean": 0.20652173913043478, "number": 92, "format": "0.21" },
+		"serve": { "mean": -0.01818181818181818, "number": 110, "format": "-0.02" },
+		"attack": { "mean": 0.21604938271604937, "number": 81, "format": "0.22" },
+		"block": { "mean": 0.10326086956521739, "number": 92, "format": "0.10" },
 		"defence": { "mean": 0, "number": 20, "format": "0.00" },
-		"reception": { "mean": 1, "number": 4, "format": "1.00" },
-		"set": { "mean": 1.7857142857142858, "number": 14, "format": "1.79" }
+		"reception": { "mean": 0.5, "number": 4, "format": "0.50" },
+		"set": { "mean": 0.8928571428571429, "number": 14, "format": "0.89" }
 	},
 	"-427388": {
-		"serve": { "mean": -0.11728395061728394, "number": 162, "format": "-0.12" },
-		"attack": { "mean": 0.609375, "number": 256, "format": "0.61" },
-		"block": { "mean": -0.6271186440677966, "number": 59, "format": "-0.63" },
-		"defence": { "mean": 0.5658914728682171, "number": 129, "format": "0.57" },
-		"reception": { "mean": 0.4098360655737705, "number": 122, "format": "0.41" },
-		"set": { "mean": 1.4285714285714286, "number": 28, "format": "1.43" }
+		"serve": { "mean": -0.03909465020576131, "number": 162, "format": "-0.04" },
+		"attack": { "mean": 0.3046875, "number": 256, "format": "0.30" },
+		"block": { "mean": -0.3135593220338983, "number": 59, "format": "-0.31" },
+		"defence": { "mean": 0.28294573643410853, "number": 129, "format": "0.28" },
+		"reception": { "mean": 0.20491803278688525, "number": 122, "format": "0.20" },
+		"set": { "mean": 0.7142857142857143, "number": 28, "format": "0.71" }
 	},
 	"-408812": {
-		"serve": { "mean": -0.11979166666666667, "number": 192, "format": "-0.12" },
-		"attack": { "mean": 0.10294117647058823, "number": 68, "format": "0.10" },
-		"block": { "mean": -0.1506849315068493, "number": 73, "format": "-0.15" },
+		"serve": { "mean": -0.03993055555555556, "number": 192, "format": "-0.04" },
+		"attack": { "mean": 0.051470588235294115, "number": 68, "format": "0.05" },
+		"block": { "mean": -0.07534246575342465, "number": 73, "format": "-0.08" },
 		"defence": { "mean": 0, "number": 115, "format": "0.00" },
-		"reception": { "mean": -1.6666666666666667, "number": 6, "format": "-1.67" },
-		"set": { "mean": 1.8401109057301295, "number": 1082, "format": "1.84" }
+		"reception": { "mean": -0.8333333333333334, "number": 6, "format": "-0.83" },
+		"set": { "mean": 0.9200554528650647, "number": 1082, "format": "0.92" }
 	},
 	"-245985": {
-		"serve": { "mean": -0.1267605633802817, "number": 142, "format": "-0.13" },
-		"attack": { "mean": 0.31297709923664124, "number": 262, "format": "0.31" },
-		"block": { "mean": -0.5423728813559322, "number": 59, "format": "-0.54" },
-		"defence": { "mean": 0.056818181818181816, "number": 88, "format": "0.06" },
-		"reception": { "mean": 0.254071661237785, "number": 307, "format": "0.25" },
-		"set": { "mean": 1.619047619047619, "number": 21, "format": "1.62" }
+		"serve": { "mean": -0.04225352112676056, "number": 142, "format": "-0.04" },
+		"attack": { "mean": 0.15648854961832062, "number": 262, "format": "0.16" },
+		"block": { "mean": -0.2711864406779661, "number": 59, "format": "-0.27" },
+		"defence": { "mean": 0.028409090909090908, "number": 88, "format": "0.03" },
+		"reception": { "mean": 0.1270358306188925, "number": 307, "format": "0.13" },
+		"set": { "mean": 0.8095238095238095, "number": 21, "format": "0.81" }
 	},
 	"-457643": {
-		"serve": { "mean": -0.2, "number": 5, "format": "-0.20" },
-		"attack": { "mean": -1, "number": 1, "format": "-1.00" },
-		"block": { "mean": 1, "number": 1, "format": "1.00" },
-		"defence": { "mean": -0.6666666666666666, "number": 3, "format": "-0.67" },
-		"set": { "mean": 2, "number": 31, "format": "2.00" }
+		"serve": { "mean": -0.06666666666666667, "number": 5, "format": "-0.07" },
+		"attack": { "mean": -0.5, "number": 1, "format": "-0.50" },
+		"block": { "mean": 0.5, "number": 1, "format": "0.50" },
+		"defence": { "mean": -0.3333333333333333, "number": 3, "format": "-0.33" },
+		"set": { "mean": 1, "number": 31, "format": "1.00" }
 	},
 	"-456285": {
-		"serve": { "mean": -0.22093023255813954, "number": 86, "format": "-0.22" },
-		"attack": { "mean": -1.5, "number": 2, "format": "-1.50" },
-		"block": { "mean": -0.2926829268292683, "number": 41, "format": "-0.29" },
-		"defence": { "mean": -0.030303030303030304, "number": 66, "format": "-0.03" },
-		"reception": { "mean": -1.5, "number": 2, "format": "-1.50" },
-		"set": { "mean": 1.898576512455516, "number": 562, "format": "1.90" }
+		"serve": { "mean": -0.07364341085271318, "number": 86, "format": "-0.07" },
+		"attack": { "mean": -0.75, "number": 2, "format": "-0.75" },
+		"block": { "mean": -0.14634146341463414, "number": 41, "format": "-0.15" },
+		"defence": { "mean": -0.015151515151515152, "number": 66, "format": "-0.02" },
+		"reception": { "mean": -0.75, "number": 2, "format": "-0.75" },
+		"set": { "mean": 0.949288256227758, "number": 562, "format": "0.95" }
 	},
 	"-452197": {
-		"serve": { "mean": -0.23529411764705882, "number": 204, "format": "-0.24" },
-		"attack": { "mean": 0.3865546218487395, "number": 238, "format": "0.39" },
-		"block": { "mean": -0.37735849056603776, "number": 53, "format": "-0.38" },
-		"defence": { "mean": 0.6153846153846154, "number": 117, "format": "0.62" },
-		"reception": { "mean": 0.3142857142857143, "number": 245, "format": "0.31" },
-		"set": { "mean": 1.7647058823529411, "number": 34, "format": "1.76" }
+		"serve": { "mean": -0.0784313725490196, "number": 204, "format": "-0.08" },
+		"attack": { "mean": 0.19327731092436976, "number": 238, "format": "0.19" },
+		"block": { "mean": -0.18867924528301888, "number": 53, "format": "-0.19" },
+		"defence": { "mean": 0.3076923076923077, "number": 117, "format": "0.31" },
+		"reception": { "mean": 0.15714285714285714, "number": 245, "format": "0.16" },
+		"set": { "mean": 0.8823529411764706, "number": 34, "format": "0.88" }
 	},
 	"-369707": {
-		"serve": { "mean": -0.24096385542168675, "number": 83, "format": "-0.24" },
-		"attack": { "mean": 0.6451612903225806, "number": 31, "format": "0.65" },
-		"block": { "mean": -0.1111111111111111, "number": 63, "format": "-0.11" },
-		"defence": { "mean": 0.1111111111111111, "number": 18, "format": "0.11" },
-		"reception": { "mean": -1, "number": 2, "format": "-1.00" },
-		"set": { "mean": 1.2, "number": 20, "format": "1.20" }
+		"serve": { "mean": -0.08032128514056225, "number": 83, "format": "-0.08" },
+		"attack": { "mean": 0.3225806451612903, "number": 31, "format": "0.32" },
+		"block": { "mean": -0.05555555555555555, "number": 63, "format": "-0.06" },
+		"defence": { "mean": 0.05555555555555555, "number": 18, "format": "0.06" },
+		"reception": { "mean": -0.5, "number": 2, "format": "-0.50" },
+		"set": { "mean": 0.6, "number": 20, "format": "0.60" }
 	},
 	"-114673": {
-		"serve": { "mean": -0.25, "number": 12, "format": "-0.25" },
-		"attack": { "mean": 0.6842105263157895, "number": 19, "format": "0.68" },
-		"block": { "mean": -1.4, "number": 5, "format": "-1.40" },
-		"defence": { "mean": -0.25, "number": 8, "format": "-0.25" },
-		"reception": { "mean": 0.6666666666666666, "number": 9, "format": "0.67" },
-		"set": { "mean": 1.8, "number": 5, "format": "1.80" }
+		"serve": { "mean": -0.08333333333333333, "number": 12, "format": "-0.08" },
+		"attack": { "mean": 0.34210526315789475, "number": 19, "format": "0.34" },
+		"block": { "mean": -0.7, "number": 5, "format": "-0.70" },
+		"defence": { "mean": -0.125, "number": 8, "format": "-0.13" },
+		"reception": { "mean": 0.3333333333333333, "number": 9, "format": "0.33" },
+		"set": { "mean": 0.9, "number": 5, "format": "0.90" }
 	},
 	"-453099": {
-		"serve": { "mean": -0.2558139534883721, "number": 129, "format": "-0.26" },
-		"attack": { "mean": 0.3287671232876712, "number": 73, "format": "0.33" },
-		"block": { "mean": -0.2719298245614035, "number": 114, "format": "-0.27" },
-		"defence": { "mean": 0.25, "number": 44, "format": "0.25" },
-		"reception": { "mean": 1.25, "number": 4, "format": "1.25" },
-		"set": { "mean": 0.8461538461538461, "number": 13, "format": "0.85" }
+		"serve": { "mean": -0.08527131782945736, "number": 129, "format": "-0.09" },
+		"attack": { "mean": 0.1643835616438356, "number": 73, "format": "0.16" },
+		"block": { "mean": -0.13596491228070176, "number": 114, "format": "-0.14" },
+		"defence": { "mean": 0.125, "number": 44, "format": "0.13" },
+		"reception": { "mean": 0.625, "number": 4, "format": "0.63" },
+		"set": { "mean": 0.4230769230769231, "number": 13, "format": "0.42" }
 	},
 	"-452824": {
-		"serve": { "mean": -0.2602739726027397, "number": 73, "format": "-0.26" },
-		"attack": { "mean": 0.03937007874015748, "number": 127, "format": "0.04" },
-		"block": { "mean": -0.13513513513513514, "number": 37, "format": "-0.14" },
-		"defence": { "mean": 0.15625, "number": 64, "format": "0.16" },
-		"reception": { "mean": 0.1625, "number": 80, "format": "0.16" },
-		"set": { "mean": 1.8125, "number": 16, "format": "1.81" }
+		"serve": { "mean": -0.0867579908675799, "number": 73, "format": "-0.09" },
+		"attack": { "mean": 0.01968503937007874, "number": 127, "format": "0.02" },
+		"block": { "mean": -0.06756756756756757, "number": 37, "format": "-0.07" },
+		"defence": { "mean": 0.078125, "number": 64, "format": "0.08" },
+		"reception": { "mean": 0.08125, "number": 80, "format": "0.08" },
+		"set": { "mean": 0.90625, "number": 16, "format": "0.91" }
 	},
 	"-389303": {
-		"serve": { "mean": -0.26436781609195403, "number": 174, "format": "-0.26" },
-		"attack": { "mean": 0.7352941176470589, "number": 170, "format": "0.74" },
-		"block": { "mean": -0.09183673469387756, "number": 196, "format": "-0.09" },
-		"defence": { "mean": 0.12903225806451613, "number": 62, "format": "0.13" },
-		"reception": { "mean": 0.375, "number": 8, "format": "0.38" },
-		"set": { "mean": 1.8636363636363635, "number": 22, "format": "1.86" }
+		"serve": { "mean": -0.08812260536398468, "number": 174, "format": "-0.09" },
+		"attack": { "mean": 0.36764705882352944, "number": 170, "format": "0.37" },
+		"block": { "mean": -0.04591836734693878, "number": 196, "format": "-0.05" },
+		"defence": { "mean": 0.06451612903225806, "number": 62, "format": "0.06" },
+		"reception": { "mean": 0.1875, "number": 8, "format": "0.19" },
+		"set": { "mean": 0.9318181818181818, "number": 22, "format": "0.93" }
 	},
 	"-452200": {
-		"serve": { "mean": -0.2727272727272727, "number": 11, "format": "-0.27" },
-		"attack": { "mean": -0.1, "number": 10, "format": "-0.10" },
-		"block": { "mean": -0.6, "number": 5, "format": "-0.60" },
-		"defence": { "mean": 1, "number": 6, "format": "1.00" },
-		"reception": { "mean": -0.8, "number": 15, "format": "-0.80" }
+		"serve": { "mean": -0.0909090909090909, "number": 11, "format": "-0.09" },
+		"attack": { "mean": -0.05, "number": 10, "format": "-0.05" },
+		"block": { "mean": -0.3, "number": 5, "format": "-0.30" },
+		"defence": { "mean": 0.5, "number": 6, "format": "0.50" },
+		"reception": { "mean": -0.4, "number": 15, "format": "-0.40" }
 	},
 	"-452518": {
-		"serve": { "mean": -0.2737430167597765, "number": 179, "format": "-0.27" },
-		"attack": { "mean": 0.504297994269341, "number": 349, "format": "0.50" },
-		"block": { "mean": -0.15384615384615385, "number": 78, "format": "-0.15" },
-		"defence": { "mean": 0.2571428571428571, "number": 105, "format": "0.26" },
-		"reception": { "mean": -1, "number": 3, "format": "-1.00" },
-		"set": { "mean": 1.7428571428571429, "number": 35, "format": "1.74" }
+		"serve": { "mean": -0.09124767225325885, "number": 179, "format": "-0.09" },
+		"attack": { "mean": 0.2521489971346705, "number": 349, "format": "0.25" },
+		"block": { "mean": -0.07692307692307693, "number": 78, "format": "-0.08" },
+		"defence": { "mean": 0.12857142857142856, "number": 105, "format": "0.13" },
+		"reception": { "mean": -0.5, "number": 3, "format": "-0.50" },
+		"set": { "mean": 0.8714285714285714, "number": 35, "format": "0.87" }
 	},
 	"-452193": {
-		"serve": { "mean": -0.2849462365591398, "number": 186, "format": "-0.28" },
-		"attack": { "mean": 0.2727272727272727, "number": 22, "format": "0.27" },
-		"block": { "mean": -0.20652173913043478, "number": 92, "format": "-0.21" },
-		"defence": { "mean": 0.28225806451612906, "number": 124, "format": "0.28" },
-		"reception": { "mean": -1, "number": 1, "format": "-1.00" },
-		"set": { "mean": 1.9050228310502284, "number": 1095, "format": "1.91" }
+		"serve": { "mean": -0.0949820788530466, "number": 186, "format": "-0.09" },
+		"attack": { "mean": 0.13636363636363635, "number": 22, "format": "0.14" },
+		"block": { "mean": -0.10326086956521739, "number": 92, "format": "-0.10" },
+		"defence": { "mean": 0.14112903225806453, "number": 124, "format": "0.14" },
+		"reception": { "mean": -0.5, "number": 1, "format": "-0.50" },
+		"set": { "mean": 0.9525114155251142, "number": 1095, "format": "0.95" }
 	},
 	"-311152": {
-		"serve": { "mean": -0.2980769230769231, "number": 104, "format": "-0.30" },
-		"attack": { "mean": 0.6, "number": 15, "format": "0.60" },
-		"block": { "mean": -0.4603174603174603, "number": 63, "format": "-0.46" },
-		"defence": { "mean": 0.1782178217821782, "number": 101, "format": "0.18" },
-		"set": { "mean": 1.9077134986225894, "number": 726, "format": "1.91" }
+		"serve": { "mean": -0.09935897435897435, "number": 104, "format": "-0.10" },
+		"attack": { "mean": 0.3, "number": 15, "format": "0.30" },
+		"block": { "mean": -0.23015873015873015, "number": 63, "format": "-0.23" },
+		"defence": { "mean": 0.0891089108910891, "number": 101, "format": "0.09" },
+		"set": { "mean": 0.9538567493112947, "number": 726, "format": "0.95" }
 	},
 	"-454347": {
-		"serve": { "mean": -0.3, "number": 30, "format": "-0.30" },
-		"attack": { "mean": 0.6666666666666666, "number": 3, "format": "0.67" },
-		"block": { "mean": -0.75, "number": 8, "format": "-0.75" },
-		"defence": { "mean": -0.1875, "number": 16, "format": "-0.19" },
-		"set": { "mean": 1.8125, "number": 112, "format": "1.81" }
+		"serve": { "mean": -0.09999999999999999, "number": 30, "format": "-0.10" },
+		"attack": { "mean": 0.3333333333333333, "number": 3, "format": "0.33" },
+		"block": { "mean": -0.375, "number": 8, "format": "-0.38" },
+		"defence": { "mean": -0.09375, "number": 16, "format": "-0.09" },
+		"set": { "mean": 0.90625, "number": 112, "format": "0.91" }
 	},
 	"-452194": {
-		"serve": { "mean": -0.3, "number": 10, "format": "-0.30" },
-		"block": { "mean": -0.6666666666666666, "number": 6, "format": "-0.67" },
-		"defence": { "mean": 1.25, "number": 4, "format": "1.25" },
-		"set": { "mean": 2, "number": 60, "format": "2.00" }
+		"serve": { "mean": -0.09999999999999999, "number": 10, "format": "-0.10" },
+		"block": { "mean": -0.3333333333333333, "number": 6, "format": "-0.33" },
+		"defence": { "mean": 0.625, "number": 4, "format": "0.63" },
+		"set": { "mean": 1, "number": 60, "format": "1.00" }
 	},
 	"-401345": {
-		"serve": { "mean": -0.3050847457627119, "number": 118, "format": "-0.31" },
-		"attack": { "mean": 0.9615384615384616, "number": 78, "format": "0.96" },
-		"block": { "mean": -0.02702702702702703, "number": 148, "format": "-0.03" },
-		"defence": { "mean": 0.47619047619047616, "number": 21, "format": "0.48" },
-		"reception": { "mean": 0.2857142857142857, "number": 7, "format": "0.29" },
-		"set": { "mean": 1.391304347826087, "number": 23, "format": "1.39" }
+		"serve": { "mean": -0.1016949152542373, "number": 118, "format": "-0.10" },
+		"attack": { "mean": 0.4807692307692308, "number": 78, "format": "0.48" },
+		"block": { "mean": -0.013513513513513514, "number": 148, "format": "-0.01" },
+		"defence": { "mean": 0.23809523809523808, "number": 21, "format": "0.24" },
+		"reception": { "mean": 0.14285714285714285, "number": 7, "format": "0.14" },
+		"set": { "mean": 0.6956521739130435, "number": 23, "format": "0.70" }
 	},
 	"-452199": {
-		"serve": { "mean": -0.3333333333333333, "number": 189, "format": "-0.33" },
-		"attack": { "mean": 0.3685446009389671, "number": 426, "format": "0.37" },
+		"serve": { "mean": -0.1111111111111111, "number": 189, "format": "-0.11" },
+		"attack": { "mean": 0.18427230046948356, "number": 426, "format": "0.18" },
 		"block": { "mean": 0, "number": 92, "format": "0.00" },
-		"defence": { "mean": 0.43373493975903615, "number": 83, "format": "0.43" },
-		"reception": { "mean": 0.48267326732673266, "number": 404, "format": "0.48" },
-		"set": { "mean": 1.9069767441860466, "number": 43, "format": "1.91" }
+		"defence": { "mean": 0.21686746987951808, "number": 83, "format": "0.22" },
+		"reception": { "mean": 0.24133663366336633, "number": 404, "format": "0.24" },
+		"set": { "mean": 0.9534883720930233, "number": 43, "format": "0.95" }
 	},
 	"-452201": {
-		"serve": { "mean": -0.3352272727272727, "number": 176, "format": "-0.34" },
-		"attack": { "mean": 0.7603305785123967, "number": 121, "format": "0.76" },
-		"block": { "mean": 0.01694915254237288, "number": 177, "format": "0.02" },
-		"defence": { "mean": -0.038461538461538464, "number": 52, "format": "-0.04" },
-		"reception": { "mean": 1, "number": 2, "format": "1.00" },
-		"set": { "mean": 2, "number": 14, "format": "2.00" }
+		"serve": { "mean": -0.11174242424242424, "number": 176, "format": "-0.11" },
+		"attack": { "mean": 0.38016528925619836, "number": 121, "format": "0.38" },
+		"block": { "mean": 0.00847457627118644, "number": 177, "format": "0.01" },
+		"defence": { "mean": -0.019230769230769232, "number": 52, "format": "-0.02" },
+		"reception": { "mean": 0.5, "number": 2, "format": "0.50" },
+		"set": { "mean": 1, "number": 14, "format": "1.00" }
 	},
 	"-408810": {
-		"serve": { "mean": -0.33962264150943394, "number": 106, "format": "-0.34" },
-		"attack": { "mean": 0.0364963503649635, "number": 137, "format": "0.04" },
-		"block": { "mean": -0.6428571428571429, "number": 42, "format": "-0.64" },
-		"defence": { "mean": 0.39325842696629215, "number": 89, "format": "0.39" },
-		"reception": { "mean": 0.1895424836601307, "number": 153, "format": "0.19" },
-		"set": { "mean": 1.5384615384615385, "number": 13, "format": "1.54" }
+		"serve": { "mean": -0.11320754716981131, "number": 106, "format": "-0.11" },
+		"attack": { "mean": 0.01824817518248175, "number": 137, "format": "0.02" },
+		"block": { "mean": -0.32142857142857145, "number": 42, "format": "-0.32" },
+		"defence": { "mean": 0.19662921348314608, "number": 89, "format": "0.20" },
+		"reception": { "mean": 0.09477124183006536, "number": 153, "format": "0.09" },
+		"set": { "mean": 0.7692307692307693, "number": 13, "format": "0.77" }
 	},
 	"-347220": {
-		"serve": { "mean": -0.3492063492063492, "number": 126, "format": "-0.35" },
-		"attack": { "mean": 0.7654320987654321, "number": 81, "format": "0.77" },
-		"block": { "mean": -0.1864406779661017, "number": 118, "format": "-0.19" },
+		"serve": { "mean": -0.1164021164021164, "number": 126, "format": "-0.12" },
+		"attack": { "mean": 0.38271604938271603, "number": 81, "format": "0.38" },
+		"block": { "mean": -0.09322033898305085, "number": 118, "format": "-0.09" },
 		"defence": { "mean": 0, "number": 25, "format": "0.00" },
-		"reception": { "mean": 0.5714285714285714, "number": 7, "format": "0.57" },
-		"set": { "mean": 1.625, "number": 24, "format": "1.63" }
+		"reception": { "mean": 0.2857142857142857, "number": 7, "format": "0.29" },
+		"set": { "mean": 0.8125, "number": 24, "format": "0.81" }
 	},
 	"-398029": {
-		"serve": { "mean": -0.35294117647058826, "number": 136, "format": "-0.35" },
-		"attack": { "mean": 0.3602015113350126, "number": 397, "format": "0.36" },
-		"block": { "mean": -0.2972972972972973, "number": 74, "format": "-0.30" },
-		"defence": { "mean": 0.40860215053763443, "number": 93, "format": "0.41" },
-		"set": { "mean": 1.4545454545454546, "number": 11, "format": "1.45" }
+		"serve": { "mean": -0.11764705882352942, "number": 136, "format": "-0.12" },
+		"attack": { "mean": 0.1801007556675063, "number": 397, "format": "0.18" },
+		"block": { "mean": -0.14864864864864866, "number": 74, "format": "-0.15" },
+		"defence": { "mean": 0.20430107526881722, "number": 93, "format": "0.20" },
+		"set": { "mean": 0.7272727272727273, "number": 11, "format": "0.73" }
 	},
 	"-452202": {
-		"serve": { "mean": -0.3705357142857143, "number": 224, "format": "-0.37" },
-		"attack": { "mean": 0.6242038216560509, "number": 157, "format": "0.62" },
-		"block": { "mean": -0.05521472392638037, "number": 163, "format": "-0.06" },
-		"defence": { "mean": -0.10714285714285714, "number": 56, "format": "-0.11" },
+		"serve": { "mean": -0.12351190476190477, "number": 224, "format": "-0.12" },
+		"attack": { "mean": 0.31210191082802546, "number": 157, "format": "0.31" },
+		"block": { "mean": -0.027607361963190184, "number": 163, "format": "-0.03" },
+		"defence": { "mean": -0.05357142857142857, "number": 56, "format": "-0.05" },
 		"reception": { "mean": 0, "number": 11, "format": "0.00" },
-		"set": { "mean": 1.0714285714285714, "number": 14, "format": "1.07" }
+		"set": { "mean": 0.5357142857142857, "number": 14, "format": "0.54" }
 	},
 	"-446639": {
-		"serve": { "mean": -0.3728813559322034, "number": 177, "format": "-0.37" },
-		"attack": { "mean": 0.7857142857142857, "number": 126, "format": "0.79" },
-		"block": { "mean": 0.1056338028169014, "number": 142, "format": "0.11" },
-		"defence": { "mean": -0.24390243902439024, "number": 41, "format": "-0.24" },
-		"reception": { "mean": 1, "number": 3, "format": "1.00" },
-		"set": { "mean": 1.875, "number": 8, "format": "1.88" }
+		"serve": { "mean": -0.12429378531073447, "number": 177, "format": "-0.12" },
+		"attack": { "mean": 0.39285714285714285, "number": 126, "format": "0.39" },
+		"block": { "mean": 0.0528169014084507, "number": 142, "format": "0.05" },
+		"defence": { "mean": -0.12195121951219512, "number": 41, "format": "-0.12" },
+		"reception": { "mean": 0.5, "number": 3, "format": "0.50" },
+		"set": { "mean": 0.9375, "number": 8, "format": "0.94" }
 	},
 	"-340159": {
-		"serve": { "mean": -0.3787878787878788, "number": 132, "format": "-0.38" },
-		"attack": { "mean": 0.6595744680851063, "number": 94, "format": "0.66" },
-		"block": { "mean": 0.14035087719298245, "number": 114, "format": "0.14" },
-		"defence": { "mean": 0.16666666666666666, "number": 36, "format": "0.17" },
-		"reception": { "mean": -0.5, "number": 2, "format": "-0.50" },
-		"set": { "mean": 1.625, "number": 16, "format": "1.63" }
+		"serve": { "mean": -0.12626262626262627, "number": 132, "format": "-0.13" },
+		"attack": { "mean": 0.32978723404255317, "number": 94, "format": "0.33" },
+		"block": { "mean": 0.07017543859649122, "number": 114, "format": "0.07" },
+		"defence": { "mean": 0.08333333333333333, "number": 36, "format": "0.08" },
+		"reception": { "mean": -0.25, "number": 2, "format": "-0.25" },
+		"set": { "mean": 0.8125, "number": 16, "format": "0.81" }
 	},
 	"-456338": {
-		"serve": { "mean": -0.38, "number": 50, "format": "-0.38" },
-		"attack": { "mean": -0.125, "number": 16, "format": "-0.13" },
-		"block": { "mean": -0.4375, "number": 32, "format": "-0.44" },
-		"defence": { "mean": -0.02631578947368421, "number": 38, "format": "-0.03" },
-		"set": { "mean": 1.944767441860465, "number": 344, "format": "1.94" }
+		"serve": { "mean": -0.12666666666666668, "number": 50, "format": "-0.13" },
+		"attack": { "mean": -0.0625, "number": 16, "format": "-0.06" },
+		"block": { "mean": -0.21875, "number": 32, "format": "-0.22" },
+		"defence": { "mean": -0.013157894736842105, "number": 38, "format": "-0.01" },
+		"set": { "mean": 0.9723837209302325, "number": 344, "format": "0.97" }
 	},
 	"-452519": {
-		"serve": { "mean": -0.38095238095238093, "number": 126, "format": "-0.38" },
-		"attack": { "mean": 0.2882882882882883, "number": 222, "format": "0.29" },
-		"block": { "mean": -0.25862068965517243, "number": 58, "format": "-0.26" },
-		"defence": { "mean": -0.07526881720430108, "number": 93, "format": "-0.08" },
-		"reception": { "mean": 0.3271889400921659, "number": 217, "format": "0.33" },
-		"set": { "mean": 1.7666666666666666, "number": 30, "format": "1.77" }
+		"serve": { "mean": -0.12698412698412698, "number": 126, "format": "-0.13" },
+		"attack": { "mean": 0.14414414414414414, "number": 222, "format": "0.14" },
+		"block": { "mean": -0.12931034482758622, "number": 58, "format": "-0.13" },
+		"defence": { "mean": -0.03763440860215054, "number": 93, "format": "-0.04" },
+		"reception": { "mean": 0.16359447004608296, "number": 217, "format": "0.16" },
+		"set": { "mean": 0.8833333333333333, "number": 30, "format": "0.88" }
 	},
 	"-408809": {
-		"serve": { "mean": -0.384, "number": 125, "format": "-0.38" },
-		"attack": { "mean": 0.054187192118226604, "number": 203, "format": "0.05" },
-		"block": { "mean": -0.03636363636363636, "number": 55, "format": "-0.04" },
-		"defence": { "mean": 0.3434343434343434, "number": 99, "format": "0.34" },
-		"reception": { "mean": 0.5045045045045045, "number": 222, "format": "0.50" },
-		"set": { "mean": 1.9130434782608696, "number": 23, "format": "1.91" }
+		"serve": { "mean": -0.128, "number": 125, "format": "-0.13" },
+		"attack": { "mean": 0.027093596059113302, "number": 203, "format": "0.03" },
+		"block": { "mean": -0.01818181818181818, "number": 55, "format": "-0.02" },
+		"defence": { "mean": 0.1717171717171717, "number": 99, "format": "0.17" },
+		"reception": { "mean": 0.25225225225225223, "number": 222, "format": "0.25" },
+		"set": { "mean": 0.9565217391304348, "number": 23, "format": "0.96" }
 	},
 	"-408814": {
-		"serve": { "mean": -0.41025641025641024, "number": 78, "format": "-0.41" },
-		"attack": { "mean": 0.34285714285714286, "number": 140, "format": "0.34" },
-		"block": { "mean": 0.15789473684210525, "number": 38, "format": "0.16" },
-		"defence": { "mean": -0.06, "number": 50, "format": "-0.06" },
-		"reception": { "mean": 0.11450381679389313, "number": 131, "format": "0.11" },
-		"set": { "mean": 1.3333333333333333, "number": 9, "format": "1.33" }
+		"serve": { "mean": -0.13675213675213674, "number": 78, "format": "-0.14" },
+		"attack": { "mean": 0.17142857142857143, "number": 140, "format": "0.17" },
+		"block": { "mean": 0.07894736842105263, "number": 38, "format": "0.08" },
+		"defence": { "mean": -0.03, "number": 50, "format": "-0.03" },
+		"reception": { "mean": 0.05725190839694656, "number": 131, "format": "0.06" },
+		"set": { "mean": 0.6666666666666666, "number": 9, "format": "0.67" }
 	},
 	"-311158": {
-		"serve": { "mean": -0.4108527131782946, "number": 129, "format": "-0.41" },
-		"attack": { "mean": 0.17346938775510204, "number": 196, "format": "0.17" },
-		"block": { "mean": -0.5094339622641509, "number": 53, "format": "-0.51" },
-		"defence": { "mean": 0.21, "number": 100, "format": "0.21" },
-		"reception": { "mean": 0.35, "number": 220, "format": "0.35" },
-		"set": { "mean": 2, "number": 24, "format": "2.00" }
+		"serve": { "mean": -0.13695090439276486, "number": 129, "format": "-0.14" },
+		"attack": { "mean": 0.08673469387755102, "number": 196, "format": "0.09" },
+		"block": { "mean": -0.25471698113207547, "number": 53, "format": "-0.25" },
+		"defence": { "mean": 0.105, "number": 100, "format": "0.10" },
+		"reception": { "mean": 0.175, "number": 220, "format": "0.17" },
+		"set": { "mean": 1, "number": 24, "format": "1.00" }
 	},
 	"-340161": {
-		"serve": { "mean": -0.41379310344827586, "number": 58, "format": "-0.41" },
-		"attack": { "mean": 0.71875, "number": 32, "format": "0.72" },
-		"block": { "mean": -0.4107142857142857, "number": 56, "format": "-0.41" },
-		"defence": { "mean": -0.07142857142857142, "number": 14, "format": "-0.07" },
-		"reception": { "mean": 1.5, "number": 2, "format": "1.50" },
-		"set": { "mean": 1.25, "number": 4, "format": "1.25" }
+		"serve": { "mean": -0.13793103448275862, "number": 58, "format": "-0.14" },
+		"attack": { "mean": 0.359375, "number": 32, "format": "0.36" },
+		"block": { "mean": -0.20535714285714285, "number": 56, "format": "-0.21" },
+		"defence": { "mean": -0.03571428571428571, "number": 14, "format": "-0.04" },
+		"reception": { "mean": 0.75, "number": 2, "format": "0.75" },
+		"set": { "mean": 0.625, "number": 4, "format": "0.63" }
 	},
 	"-409970": {
-		"serve": { "mean": -0.4153846153846154, "number": 65, "format": "-0.42" },
-		"attack": { "mean": 0.3684210526315789, "number": 19, "format": "0.37" },
-		"block": { "mean": -0.36363636363636365, "number": 33, "format": "-0.36" },
-		"defence": { "mean": -0.5714285714285714, "number": 14, "format": "-0.57" },
-		"reception": { "mean": -0.25, "number": 4, "format": "-0.25" },
-		"set": { "mean": 1, "number": 3, "format": "1.00" }
+		"serve": { "mean": -0.13846153846153847, "number": 65, "format": "-0.14" },
+		"attack": { "mean": 0.18421052631578946, "number": 19, "format": "0.18" },
+		"block": { "mean": -0.18181818181818182, "number": 33, "format": "-0.18" },
+		"defence": { "mean": -0.2857142857142857, "number": 14, "format": "-0.29" },
+		"reception": { "mean": -0.125, "number": 4, "format": "-0.13" },
+		"set": { "mean": 0.5, "number": 3, "format": "0.50" }
 	},
 	"-457642": {
-		"serve": { "mean": -0.4174757281553398, "number": 103, "format": "-0.42" },
-		"attack": { "mean": 0.375, "number": 88, "format": "0.38" },
-		"block": { "mean": 0.021052631578947368, "number": 95, "format": "0.02" },
-		"defence": { "mean": -0.5555555555555556, "number": 27, "format": "-0.56" },
-		"reception": { "mean": 0.5714285714285714, "number": 7, "format": "0.57" },
-		"set": { "mean": 1.25, "number": 8, "format": "1.25" }
+		"serve": { "mean": -0.13915857605177992, "number": 103, "format": "-0.14" },
+		"attack": { "mean": 0.1875, "number": 88, "format": "0.19" },
+		"block": { "mean": 0.010526315789473684, "number": 95, "format": "0.01" },
+		"defence": { "mean": -0.2777777777777778, "number": 27, "format": "-0.28" },
+		"reception": { "mean": 0.2857142857142857, "number": 7, "format": "0.29" },
+		"set": { "mean": 0.625, "number": 8, "format": "0.63" }
 	},
 	"-457640": {
-		"serve": { "mean": -0.42105263157894735, "number": 95, "format": "-0.42" },
-		"attack": { "mean": 0.17167381974248927, "number": 233, "format": "0.17" },
-		"block": { "mean": -0.13333333333333333, "number": 60, "format": "-0.13" },
-		"defence": { "mean": -0.013333333333333334, "number": 75, "format": "-0.01" },
-		"reception": { "mean": 0.024509803921568627, "number": 204, "format": "0.02" },
-		"set": { "mean": 1.2727272727272727, "number": 22, "format": "1.27" }
+		"serve": { "mean": -0.14035087719298245, "number": 95, "format": "-0.14" },
+		"attack": { "mean": 0.08583690987124463, "number": 233, "format": "0.09" },
+		"block": { "mean": -0.06666666666666667, "number": 60, "format": "-0.07" },
+		"defence": { "mean": -0.006666666666666667, "number": 75, "format": "-0.01" },
+		"reception": { "mean": 0.012254901960784314, "number": 204, "format": "0.01" },
+		"set": { "mean": 0.6363636363636364, "number": 22, "format": "0.64" }
 	},
 	"-453092": {
-		"serve": { "mean": -0.42857142857142855, "number": 168, "format": "-0.43" },
-		"attack": { "mean": 0.3323262839879154, "number": 331, "format": "0.33" },
-		"block": { "mean": -0.058823529411764705, "number": 68, "format": "-0.06" },
-		"defence": { "mean": 0.32989690721649484, "number": 97, "format": "0.33" },
-		"reception": { "mean": 0.30943396226415093, "number": 265, "format": "0.31" },
-		"set": { "mean": 1.3333333333333333, "number": 27, "format": "1.33" }
+		"serve": { "mean": -0.14285714285714285, "number": 168, "format": "-0.14" },
+		"attack": { "mean": 0.1661631419939577, "number": 331, "format": "0.17" },
+		"block": { "mean": -0.029411764705882353, "number": 68, "format": "-0.03" },
+		"defence": { "mean": 0.16494845360824742, "number": 97, "format": "0.16" },
+		"reception": { "mean": 0.15471698113207547, "number": 265, "format": "0.15" },
+		"set": { "mean": 0.6666666666666666, "number": 27, "format": "0.67" }
 	},
 	"-400896": {
-		"serve": { "mean": -0.43137254901960786, "number": 51, "format": "-0.43" },
-		"attack": { "mean": 0.3157894736842105, "number": 19, "format": "0.32" },
-		"block": { "mean": -0.017241379310344827, "number": 58, "format": "-0.02" },
-		"defence": { "mean": 0.3, "number": 10, "format": "0.30" },
-		"reception": { "mean": 1, "number": 1, "format": "1.00" },
-		"set": { "mean": 1, "number": 4, "format": "1.00" }
+		"serve": { "mean": -0.14379084967320263, "number": 51, "format": "-0.14" },
+		"attack": { "mean": 0.15789473684210525, "number": 19, "format": "0.16" },
+		"block": { "mean": -0.008620689655172414, "number": 58, "format": "-0.01" },
+		"defence": { "mean": 0.15, "number": 10, "format": "0.15" },
+		"reception": { "mean": 0.5, "number": 1, "format": "0.50" },
+		"set": { "mean": 0.5, "number": 4, "format": "0.50" }
 	},
 	"-457641": {
-		"serve": { "mean": -0.4411764705882353, "number": 34, "format": "-0.44" },
-		"attack": { "mean": -0.010309278350515464, "number": 97, "format": "-0.01" },
-		"block": { "mean": 0.2631578947368421, "number": 19, "format": "0.26" },
-		"defence": { "mean": 0.6086956521739131, "number": 23, "format": "0.61" },
-		"reception": { "mean": -1, "number": 1, "format": "-1.00" },
-		"set": { "mean": 1, "number": 6, "format": "1.00" }
+		"serve": { "mean": -0.14705882352941177, "number": 34, "format": "-0.15" },
+		"attack": { "mean": -0.005154639175257732, "number": 97, "format": "-0.01" },
+		"block": { "mean": 0.13157894736842105, "number": 19, "format": "0.13" },
+		"defence": { "mean": 0.30434782608695654, "number": 23, "format": "0.30" },
+		"reception": { "mean": -0.5, "number": 1, "format": "-0.50" },
+		"set": { "mean": 0.5, "number": 6, "format": "0.50" }
 	},
 	"-292949": {
-		"serve": { "mean": -0.45, "number": 20, "format": "-0.45" },
-		"attack": { "mean": -0.7931034482758621, "number": 29, "format": "-0.79" },
-		"block": { "mean": -0.75, "number": 4, "format": "-0.75" },
-		"defence": { "mean": 0.7142857142857143, "number": 7, "format": "0.71" },
-		"reception": { "mean": -0.37142857142857144, "number": 35, "format": "-0.37" },
-		"set": { "mean": 2, "number": 2, "format": "2.00" }
+		"serve": { "mean": -0.15, "number": 20, "format": "-0.15" },
+		"attack": { "mean": -0.39655172413793105, "number": 29, "format": "-0.40" },
+		"block": { "mean": -0.375, "number": 4, "format": "-0.38" },
+		"defence": { "mean": 0.35714285714285715, "number": 7, "format": "0.36" },
+		"reception": { "mean": -0.18571428571428572, "number": 35, "format": "-0.19" },
+		"set": { "mean": 1, "number": 2, "format": "1.00" }
 	},
 	"-453089": {
-		"serve": { "mean": -0.45161290322580644, "number": 124, "format": "-0.45" },
-		"attack": { "mean": 0.42857142857142855, "number": 14, "format": "0.43" },
-		"block": { "mean": 0.02127659574468085, "number": 47, "format": "0.02" },
-		"defence": { "mean": -0.07692307692307693, "number": 78, "format": "-0.08" },
-		"reception": { "mean": -2, "number": 2, "format": "-2.00" },
-		"set": { "mean": 1.826302729528536, "number": 806, "format": "1.83" }
+		"serve": { "mean": -0.15053763440860216, "number": 124, "format": "-0.15" },
+		"attack": { "mean": 0.21428571428571427, "number": 14, "format": "0.21" },
+		"block": { "mean": 0.010638297872340425, "number": 47, "format": "0.01" },
+		"defence": { "mean": -0.038461538461538464, "number": 78, "format": "-0.04" },
+		"reception": { "mean": -1, "number": 2, "format": "-1.00" },
+		"set": { "mean": 0.913151364764268, "number": 806, "format": "0.91" }
 	},
 	"-427390": {
-		"serve": { "mean": -0.4536082474226804, "number": 97, "format": "-0.45" },
-		"attack": { "mean": 0.7361111111111112, "number": 72, "format": "0.74" },
-		"block": { "mean": 0.011363636363636364, "number": 88, "format": "0.01" },
-		"defence": { "mean": 0.125, "number": 24, "format": "0.13" },
+		"serve": { "mean": -0.15120274914089346, "number": 97, "format": "-0.15" },
+		"attack": { "mean": 0.3680555555555556, "number": 72, "format": "0.37" },
+		"block": { "mean": 0.005681818181818182, "number": 88, "format": "0.01" },
+		"defence": { "mean": 0.0625, "number": 24, "format": "0.06" },
 		"reception": { "mean": 0, "number": 6, "format": "0.00" },
-		"set": { "mean": 1.7692307692307692, "number": 13, "format": "1.77" }
+		"set": { "mean": 0.8846153846153846, "number": 13, "format": "0.88" }
 	},
 	"-453091": {
-		"serve": { "mean": -0.45454545454545453, "number": 44, "format": "-0.45" },
-		"attack": { "mean": -1, "number": 1, "format": "-1.00" },
-		"block": { "mean": -0.10526315789473684, "number": 19, "format": "-0.11" },
-		"defence": { "mean": 0.03225806451612903, "number": 31, "format": "0.03" },
-		"set": { "mean": 1.834862385321101, "number": 218, "format": "1.83" }
+		"serve": { "mean": -0.15151515151515152, "number": 44, "format": "-0.15" },
+		"attack": { "mean": -0.5, "number": 1, "format": "-0.50" },
+		"block": { "mean": -0.05263157894736842, "number": 19, "format": "-0.05" },
+		"defence": { "mean": 0.016129032258064516, "number": 31, "format": "0.02" },
+		"set": { "mean": 0.9174311926605505, "number": 218, "format": "0.92" }
 	},
 	"-408815": {
-		"serve": { "mean": -0.45555555555555555, "number": 90, "format": "-0.46" },
-		"attack": { "mean": 0.32142857142857145, "number": 56, "format": "0.32" },
-		"block": { "mean": -0.34782608695652173, "number": 92, "format": "-0.35" },
-		"defence": { "mean": -0.391304347826087, "number": 23, "format": "-0.39" },
-		"reception": { "mean": 0.16666666666666666, "number": 6, "format": "0.17" },
-		"set": { "mean": 0.8333333333333334, "number": 6, "format": "0.83" }
+		"serve": { "mean": -0.15185185185185185, "number": 90, "format": "-0.15" },
+		"attack": { "mean": 0.16071428571428573, "number": 56, "format": "0.16" },
+		"block": { "mean": -0.17391304347826086, "number": 92, "format": "-0.17" },
+		"defence": { "mean": -0.1956521739130435, "number": 23, "format": "-0.20" },
+		"reception": { "mean": 0.08333333333333333, "number": 6, "format": "0.08" },
+		"set": { "mean": 0.4166666666666667, "number": 6, "format": "0.42" }
 	},
 	"-457659": {
-		"serve": { "mean": -0.48484848484848486, "number": 66, "format": "-0.48" },
-		"attack": { "mean": 0.25806451612903225, "number": 31, "format": "0.26" },
-		"block": { "mean": -0.5079365079365079, "number": 63, "format": "-0.51" },
-		"defence": { "mean": 0.4666666666666667, "number": 15, "format": "0.47" },
-		"reception": { "mean": 0.625, "number": 8, "format": "0.63" },
-		"set": { "mean": 0.6, "number": 10, "format": "0.60" }
+		"serve": { "mean": -0.16161616161616163, "number": 66, "format": "-0.16" },
+		"attack": { "mean": 0.12903225806451613, "number": 31, "format": "0.13" },
+		"block": { "mean": -0.25396825396825395, "number": 63, "format": "-0.25" },
+		"defence": { "mean": 0.23333333333333334, "number": 15, "format": "0.23" },
+		"reception": { "mean": 0.3125, "number": 8, "format": "0.31" },
+		"set": { "mean": 0.3, "number": 10, "format": "0.30" }
 	},
 	"-400710": {
-		"serve": { "mean": -0.4931506849315068, "number": 73, "format": "-0.49" },
-		"attack": { "mean": 0.16216216216216217, "number": 74, "format": "0.16" },
-		"block": { "mean": -0.15942028985507245, "number": 69, "format": "-0.16" },
-		"defence": { "mean": -0.2777777777777778, "number": 36, "format": "-0.28" },
-		"reception": { "mean": -0.3333333333333333, "number": 3, "format": "-0.33" },
-		"set": { "mean": 1.6666666666666667, "number": 12, "format": "1.67" }
+		"serve": { "mean": -0.1643835616438356, "number": 73, "format": "-0.16" },
+		"attack": { "mean": 0.08108108108108109, "number": 74, "format": "0.08" },
+		"block": { "mean": -0.07971014492753623, "number": 69, "format": "-0.08" },
+		"defence": { "mean": -0.1388888888888889, "number": 36, "format": "-0.14" },
+		"reception": { "mean": -0.16666666666666666, "number": 3, "format": "-0.17" },
+		"set": { "mean": 0.8333333333333334, "number": 12, "format": "0.83" }
 	},
 	"-400696": {
-		"serve": { "mean": -0.5, "number": 18, "format": "-0.50" },
-		"attack": { "mean": 0.1111111111111111, "number": 9, "format": "0.11" },
-		"block": { "mean": -0.2777777777777778, "number": 18, "format": "-0.28" },
-		"defence": { "mean": 0.125, "number": 8, "format": "0.13" },
-		"set": { "mean": 1, "number": 3, "format": "1.00" }
+		"serve": { "mean": -0.16666666666666666, "number": 18, "format": "-0.17" },
+		"attack": { "mean": 0.05555555555555555, "number": 9, "format": "0.06" },
+		"block": { "mean": -0.1388888888888889, "number": 18, "format": "-0.14" },
+		"defence": { "mean": 0.0625, "number": 8, "format": "0.06" },
+		"set": { "mean": 0.5, "number": 3, "format": "0.50" }
 	},
 	"TAN-SAM": {
-		"serve": { "mean": -0.5, "number": 4, "format": "-0.50" },
-		"defence": { "mean": 1, "number": 1, "format": "1.00" },
-		"reception": { "mean": 0.5, "number": 2, "format": "0.50" }
+		"serve": { "mean": -0.16666666666666666, "number": 4, "format": "-0.17" },
+		"defence": { "mean": 0.5, "number": 1, "format": "0.50" },
+		"reception": { "mean": 0.25, "number": 2, "format": "0.25" }
 	},
 	"-452198": {
-		"serve": { "mean": -0.5, "number": 2, "format": "-0.50" },
-		"attack": { "mean": 2, "number": 3, "format": "2.00" },
-		"block": { "mean": 1.5, "number": 2, "format": "1.50" },
-		"defence": { "mean": -0.25, "number": 4, "format": "-0.25" },
-		"reception": { "mean": -0.8, "number": 5, "format": "-0.80" }
+		"serve": { "mean": -0.16666666666666666, "number": 2, "format": "-0.17" },
+		"attack": { "mean": 1, "number": 3, "format": "1.00" },
+		"block": { "mean": 0.75, "number": 2, "format": "0.75" },
+		"defence": { "mean": -0.125, "number": 4, "format": "-0.13" },
+		"reception": { "mean": -0.4, "number": 5, "format": "-0.40" }
 	},
 	"-453102": {
-		"serve": { "mean": -0.5138888888888888, "number": 72, "format": "-0.51" },
-		"attack": { "mean": 0.9433962264150944, "number": 53, "format": "0.94" },
-		"block": { "mean": -0.4666666666666667, "number": 60, "format": "-0.47" },
-		"defence": { "mean": 0.4117647058823529, "number": 17, "format": "0.41" },
-		"reception": { "mean": 0.25, "number": 4, "format": "0.25" },
+		"serve": { "mean": -0.17129629629629628, "number": 72, "format": "-0.17" },
+		"attack": { "mean": 0.4716981132075472, "number": 53, "format": "0.47" },
+		"block": { "mean": -0.23333333333333334, "number": 60, "format": "-0.23" },
+		"defence": { "mean": 0.20588235294117646, "number": 17, "format": "0.21" },
+		"reception": { "mean": 0.125, "number": 4, "format": "0.13" },
 		"set": { "mean": 0, "number": 2, "format": "0.00" }
 	},
 	"-449306": {
-		"serve": { "mean": -0.5176470588235295, "number": 85, "format": "-0.52" },
-		"attack": { "mean": 0.04597701149425287, "number": 174, "format": "0.05" },
-		"block": { "mean": -0.30434782608695654, "number": 23, "format": "-0.30" },
-		"defence": { "mean": 0.11842105263157894, "number": 76, "format": "0.12" },
-		"reception": { "mean": 0.24087591240875914, "number": 137, "format": "0.24" },
-		"set": { "mean": 1.4736842105263157, "number": 19, "format": "1.47" }
+		"serve": { "mean": -0.17254901960784316, "number": 85, "format": "-0.17" },
+		"attack": { "mean": 0.022988505747126436, "number": 174, "format": "0.02" },
+		"block": { "mean": -0.15217391304347827, "number": 23, "format": "-0.15" },
+		"defence": { "mean": 0.05921052631578947, "number": 76, "format": "0.06" },
+		"reception": { "mean": 0.12043795620437957, "number": 137, "format": "0.12" },
+		"set": { "mean": 0.7368421052631579, "number": 19, "format": "0.74" }
 	},
 	"-452196": {
-		"serve": { "mean": -0.5333333333333333, "number": 150, "format": "-0.53" },
-		"attack": { "mean": 0.5406824146981627, "number": 381, "format": "0.54" },
-		"block": { "mean": -0.11956521739130435, "number": 93, "format": "-0.12" },
-		"defence": { "mean": 0.6020408163265306, "number": 98, "format": "0.60" },
-		"reception": { "mean": 0.6666666666666666, "number": 3, "format": "0.67" },
-		"set": { "mean": 1.4583333333333333, "number": 24, "format": "1.46" }
+		"serve": { "mean": -0.17777777777777778, "number": 150, "format": "-0.18" },
+		"attack": { "mean": 0.27034120734908135, "number": 381, "format": "0.27" },
+		"block": { "mean": -0.059782608695652176, "number": 93, "format": "-0.06" },
+		"defence": { "mean": 0.3010204081632653, "number": 98, "format": "0.30" },
+		"reception": { "mean": 0.3333333333333333, "number": 3, "format": "0.33" },
+		"set": { "mean": 0.7291666666666666, "number": 24, "format": "0.73" }
 	},
 	"-441136": {
-		"serve": { "mean": -0.543046357615894, "number": 151, "format": "-0.54" },
-		"attack": { "mean": 0.24334600760456274, "number": 263, "format": "0.24" },
-		"block": { "mean": -0.323943661971831, "number": 71, "format": "-0.32" },
-		"defence": { "mean": 0.2032520325203252, "number": 123, "format": "0.20" },
-		"reception": { "mean": 0.41911764705882354, "number": 136, "format": "0.42" },
-		"set": { "mean": 1.8235294117647058, "number": 34, "format": "1.82" }
+		"serve": { "mean": -0.18101545253863136, "number": 151, "format": "-0.18" },
+		"attack": { "mean": 0.12167300380228137, "number": 263, "format": "0.12" },
+		"block": { "mean": -0.1619718309859155, "number": 71, "format": "-0.16" },
+		"defence": { "mean": 0.1016260162601626, "number": 123, "format": "0.10" },
+		"reception": { "mean": 0.20955882352941177, "number": 136, "format": "0.21" },
+		"set": { "mean": 0.9117647058823529, "number": 34, "format": "0.91" }
 	},
 	"-462483": {
-		"serve": { "mean": -0.5555555555555556, "number": 18, "format": "-0.56" },
-		"attack": { "mean": -0.1111111111111111, "number": 18, "format": "-0.11" },
-		"block": { "mean": -1, "number": 5, "format": "-1.00" },
-		"defence": { "mean": -0.8333333333333334, "number": 12, "format": "-0.83" },
-		"reception": { "mean": 0.4444444444444444, "number": 18, "format": "0.44" },
-		"set": { "mean": 2, "number": 12, "format": "2.00" }
+		"serve": { "mean": -0.1851851851851852, "number": 18, "format": "-0.19" },
+		"attack": { "mean": -0.05555555555555555, "number": 18, "format": "-0.06" },
+		"block": { "mean": -0.5, "number": 5, "format": "-0.50" },
+		"defence": { "mean": -0.4166666666666667, "number": 12, "format": "-0.42" },
+		"reception": { "mean": 0.2222222222222222, "number": 18, "format": "0.22" },
+		"set": { "mean": 1, "number": 12, "format": "1.00" }
 	},
 	"-457638": {
-		"serve": { "mean": -0.5620915032679739, "number": 153, "format": "-0.56" },
-		"attack": { "mean": -0.2, "number": 10, "format": "-0.20" },
-		"block": { "mean": -0.13043478260869565, "number": 46, "format": "-0.13" },
-		"defence": { "mean": -0.10126582278481013, "number": 79, "format": "-0.10" },
-		"reception": { "mean": -2, "number": 1, "format": "-2.00" },
-		"set": { "mean": 1.854970760233918, "number": 855, "format": "1.85" }
+		"serve": { "mean": -0.18736383442265794, "number": 153, "format": "-0.19" },
+		"attack": { "mean": -0.1, "number": 10, "format": "-0.10" },
+		"block": { "mean": -0.06521739130434782, "number": 46, "format": "-0.07" },
+		"defence": { "mean": -0.05063291139240506, "number": 79, "format": "-0.05" },
+		"reception": { "mean": -1, "number": 1, "format": "-1.00" },
+		"set": { "mean": 0.927485380116959, "number": 855, "format": "0.93" }
 	},
 	"-409908": {
-		"serve": { "mean": -0.6, "number": 75, "format": "-0.60" },
-		"attack": { "mean": 0.6, "number": 5, "format": "0.60" },
-		"block": { "mean": -0.9230769230769231, "number": 26, "format": "-0.92" },
-		"defence": { "mean": -0.18867924528301888, "number": 53, "format": "-0.19" },
-		"reception": { "mean": -1.5, "number": 2, "format": "-1.50" },
-		"set": { "mean": 1.9383033419023137, "number": 389, "format": "1.94" }
+		"serve": { "mean": -0.19999999999999998, "number": 75, "format": "-0.20" },
+		"attack": { "mean": 0.3, "number": 5, "format": "0.30" },
+		"block": { "mean": -0.46153846153846156, "number": 26, "format": "-0.46" },
+		"defence": { "mean": -0.09433962264150944, "number": 53, "format": "-0.09" },
+		"reception": { "mean": -0.75, "number": 2, "format": "-0.75" },
+		"set": { "mean": 0.9691516709511568, "number": 389, "format": "0.97" }
 	},
 	"-408811": {
-		"serve": { "mean": -0.6, "number": 20, "format": "-0.60" },
-		"attack": { "mean": 0.6739130434782609, "number": 46, "format": "0.67" },
-		"block": { "mean": -0.2727272727272727, "number": 11, "format": "-0.27" },
-		"defence": { "mean": 0.2777777777777778, "number": 18, "format": "0.28" },
-		"set": { "mean": 2, "number": 2, "format": "2.00" }
+		"serve": { "mean": -0.19999999999999998, "number": 20, "format": "-0.20" },
+		"attack": { "mean": 0.33695652173913043, "number": 46, "format": "0.34" },
+		"block": { "mean": -0.13636363636363635, "number": 11, "format": "-0.14" },
+		"defence": { "mean": 0.1388888888888889, "number": 18, "format": "0.14" },
+		"set": { "mean": 1, "number": 2, "format": "1.00" }
 	},
 	"-441134": {
-		"serve": { "mean": -0.6226415094339622, "number": 53, "format": "-0.62" },
-		"attack": { "mean": -1, "number": 2, "format": "-1.00" },
-		"block": { "mean": -0.3888888888888889, "number": 18, "format": "-0.39" },
-		"defence": { "mean": -0.2857142857142857, "number": 35, "format": "-0.29" },
-		"reception": { "mean": -0.6666666666666666, "number": 3, "format": "-0.67" },
-		"set": { "mean": 1.8637873754152825, "number": 301, "format": "1.86" }
+		"serve": { "mean": -0.20754716981132074, "number": 53, "format": "-0.21" },
+		"attack": { "mean": -0.5, "number": 2, "format": "-0.50" },
+		"block": { "mean": -0.19444444444444445, "number": 18, "format": "-0.19" },
+		"defence": { "mean": -0.14285714285714285, "number": 35, "format": "-0.14" },
+		"reception": { "mean": -0.3333333333333333, "number": 3, "format": "-0.33" },
+		"set": { "mean": 0.9318936877076412, "number": 301, "format": "0.93" }
 	},
 	"-452516": {
-		"serve": { "mean": -0.625, "number": 40, "format": "-0.63" },
-		"attack": { "mean": 0.8, "number": 5, "format": "0.80" },
-		"block": { "mean": -0.16666666666666666, "number": 18, "format": "-0.17" },
+		"serve": { "mean": -0.20833333333333334, "number": 40, "format": "-0.21" },
+		"attack": { "mean": 0.4, "number": 5, "format": "0.40" },
+		"block": { "mean": -0.08333333333333333, "number": 18, "format": "-0.08" },
 		"defence": { "mean": 0, "number": 50, "format": "0.00" },
-		"set": { "mean": 1.839464882943144, "number": 299, "format": "1.84" }
+		"set": { "mean": 0.919732441471572, "number": 299, "format": "0.92" }
 	},
 	"-453098": {
-		"serve": { "mean": -0.6296296296296297, "number": 135, "format": "-0.63" },
-		"attack": { "mean": 0.8311688311688312, "number": 77, "format": "0.83" },
-		"block": { "mean": -0.39361702127659576, "number": 94, "format": "-0.39" },
-		"defence": { "mean": -0.09090909090909091, "number": 33, "format": "-0.09" },
-		"reception": { "mean": -0.2222222222222222, "number": 9, "format": "-0.22" },
-		"set": { "mean": 0.8571428571428571, "number": 7, "format": "0.86" }
+		"serve": { "mean": -0.20987654320987656, "number": 135, "format": "-0.21" },
+		"attack": { "mean": 0.4155844155844156, "number": 77, "format": "0.42" },
+		"block": { "mean": -0.19680851063829788, "number": 94, "format": "-0.20" },
+		"defence": { "mean": -0.045454545454545456, "number": 33, "format": "-0.05" },
+		"reception": { "mean": -0.1111111111111111, "number": 9, "format": "-0.11" },
+		"set": { "mean": 0.42857142857142855, "number": 7, "format": "0.43" }
 	},
 	"-427392": {
-		"serve": { "mean": -0.6363636363636364, "number": 11, "format": "-0.64" },
-		"attack": { "mean": -0.21212121212121213, "number": 33, "format": "-0.21" },
-		"block": { "mean": 0.38461538461538464, "number": 13, "format": "0.38" },
-		"defence": { "mean": -0.16666666666666666, "number": 18, "format": "-0.17" },
-		"set": { "mean": 2, "number": 1, "format": "2.00" }
+		"serve": { "mean": -0.21212121212121213, "number": 11, "format": "-0.21" },
+		"attack": { "mean": -0.10606060606060606, "number": 33, "format": "-0.11" },
+		"block": { "mean": 0.19230769230769232, "number": 13, "format": "0.19" },
+		"defence": { "mean": -0.08333333333333333, "number": 18, "format": "-0.08" },
+		"set": { "mean": 1, "number": 1, "format": "1.00" }
 	},
 	"-399099": {
-		"serve": { "mean": -0.6386554621848739, "number": 119, "format": "-0.64" },
-		"attack": { "mean": 0.314410480349345, "number": 229, "format": "0.31" },
-		"block": { "mean": -0.40476190476190477, "number": 42, "format": "-0.40" },
-		"defence": { "mean": 0.1891891891891892, "number": 74, "format": "0.19" },
-		"reception": { "mean": 0.2491349480968858, "number": 289, "format": "0.25" },
-		"set": { "mean": 1.4516129032258065, "number": 31, "format": "1.45" }
+		"serve": { "mean": -0.21288515406162464, "number": 119, "format": "-0.21" },
+		"attack": { "mean": 0.1572052401746725, "number": 229, "format": "0.16" },
+		"block": { "mean": -0.20238095238095238, "number": 42, "format": "-0.20" },
+		"defence": { "mean": 0.0945945945945946, "number": 74, "format": "0.09" },
+		"reception": { "mean": 0.1245674740484429, "number": 289, "format": "0.12" },
+		"set": { "mean": 0.7258064516129032, "number": 31, "format": "0.73" }
 	},
 	"-453096": {
-		"serve": { "mean": -0.6634615384615384, "number": 104, "format": "-0.66" },
-		"attack": { "mean": 0.42, "number": 250, "format": "0.42" },
-		"block": { "mean": 0.031746031746031744, "number": 63, "format": "0.03" },
-		"defence": { "mean": 0.1875, "number": 80, "format": "0.19" },
-		"reception": { "mean": 1, "number": 1, "format": "1.00" },
-		"set": { "mean": 1.5789473684210527, "number": 19, "format": "1.58" }
+		"serve": { "mean": -0.22115384615384615, "number": 104, "format": "-0.22" },
+		"attack": { "mean": 0.21, "number": 250, "format": "0.21" },
+		"block": { "mean": 0.015873015873015872, "number": 63, "format": "0.02" },
+		"defence": { "mean": 0.09375, "number": 80, "format": "0.09" },
+		"reception": { "mean": 0.5, "number": 1, "format": "0.50" },
+		"set": { "mean": 0.7894736842105263, "number": 19, "format": "0.79" }
 	},
 	"-453101": {
-		"serve": { "mean": -0.6825396825396826, "number": 126, "format": "-0.68" },
-		"attack": { "mean": 0.4581673306772908, "number": 251, "format": "0.46" },
-		"block": { "mean": -0.4375, "number": 48, "format": "-0.44" },
-		"defence": { "mean": -0.03488372093023256, "number": 86, "format": "-0.03" },
-		"reception": { "mean": 0.43564356435643564, "number": 202, "format": "0.44" },
-		"set": { "mean": 1.6521739130434783, "number": 46, "format": "1.65" }
+		"serve": { "mean": -0.22751322751322753, "number": 126, "format": "-0.23" },
+		"attack": { "mean": 0.2290836653386454, "number": 251, "format": "0.23" },
+		"block": { "mean": -0.21875, "number": 48, "format": "-0.22" },
+		"defence": { "mean": -0.01744186046511628, "number": 86, "format": "-0.02" },
+		"reception": { "mean": 0.21782178217821782, "number": 202, "format": "0.22" },
+		"set": { "mean": 0.8260869565217391, "number": 46, "format": "0.83" }
 	},
 	"-457639": {
-		"serve": { "mean": -0.6904761904761905, "number": 42, "format": "-0.69" },
-		"attack": { "mean": -0.030303030303030304, "number": 132, "format": "-0.03" },
-		"block": { "mean": 0.3333333333333333, "number": 18, "format": "0.33" },
-		"defence": { "mean": -0.1509433962264151, "number": 53, "format": "-0.15" },
-		"reception": { "mean": 0.05517241379310345, "number": 145, "format": "0.06" },
-		"set": { "mean": 1.625, "number": 8, "format": "1.63" }
+		"serve": { "mean": -0.23015873015873015, "number": 42, "format": "-0.23" },
+		"attack": { "mean": -0.015151515151515152, "number": 132, "format": "-0.02" },
+		"block": { "mean": 0.16666666666666666, "number": 18, "format": "0.17" },
+		"defence": { "mean": -0.07547169811320754, "number": 53, "format": "-0.08" },
+		"reception": { "mean": 0.027586206896551724, "number": 145, "format": "0.03" },
+		"set": { "mean": 0.8125, "number": 8, "format": "0.81" }
 	},
 	"-453093": {
-		"serve": { "mean": -0.7083333333333334, "number": 48, "format": "-0.71" },
-		"attack": { "mean": 0.25, "number": 88, "format": "0.25" },
+		"serve": { "mean": -0.23611111111111113, "number": 48, "format": "-0.24" },
+		"attack": { "mean": 0.125, "number": 88, "format": "0.13" },
 		"block": { "mean": 0, "number": 20, "format": "0.00" },
-		"defence": { "mean": -0.16666666666666666, "number": 24, "format": "-0.17" },
-		"reception": { "mean": 1, "number": 1, "format": "1.00" },
-		"set": { "mean": 1.4285714285714286, "number": 7, "format": "1.43" }
+		"defence": { "mean": -0.08333333333333333, "number": 24, "format": "-0.08" },
+		"reception": { "mean": 0.5, "number": 1, "format": "0.50" },
+		"set": { "mean": 0.7142857142857143, "number": 7, "format": "0.71" }
 	},
 	"-457660": {
-		"serve": { "mean": -0.7711864406779662, "number": 118, "format": "-0.77" },
-		"attack": { "mean": 0.2639225181598063, "number": 413, "format": "0.26" },
-		"block": { "mean": -0.1724137931034483, "number": 87, "format": "-0.17" },
-		"defence": { "mean": 0.045454545454545456, "number": 88, "format": "0.05" },
-		"reception": { "mean": 2, "number": 2, "format": "2.00" },
-		"set": { "mean": 1.25, "number": 20, "format": "1.25" }
+		"serve": { "mean": -0.2570621468926554, "number": 118, "format": "-0.26" },
+		"attack": { "mean": 0.13196125907990314, "number": 413, "format": "0.13" },
+		"block": { "mean": -0.08620689655172414, "number": 87, "format": "-0.09" },
+		"defence": { "mean": 0.022727272727272728, "number": 88, "format": "0.02" },
+		"reception": { "mean": 1, "number": 2, "format": "1.00" },
+		"set": { "mean": 0.625, "number": 20, "format": "0.63" }
 	},
 	"-389305": {
-		"serve": { "mean": -0.8, "number": 15, "format": "-0.80" },
-		"attack": { "mean": 2, "number": 1, "format": "2.00" },
-		"block": { "mean": -0.5, "number": 2, "format": "-0.50" },
-		"defence": { "mean": 0.1, "number": 10, "format": "0.10" },
-		"set": { "mean": 1.4901960784313726, "number": 51, "format": "1.49" }
+		"serve": { "mean": -0.26666666666666666, "number": 15, "format": "-0.27" },
+		"attack": { "mean": 1, "number": 1, "format": "1.00" },
+		"block": { "mean": -0.25, "number": 2, "format": "-0.25" },
+		"defence": { "mean": 0.05, "number": 10, "format": "0.05" },
+		"set": { "mean": 0.7450980392156863, "number": 51, "format": "0.75" }
 	},
 	"-409913": {
-		"serve": { "mean": -0.8846153846153846, "number": 26, "format": "-0.88" },
-		"attack": { "mean": 0.04081632653061224, "number": 49, "format": "0.04" },
-		"block": { "mean": -0.6923076923076923, "number": 13, "format": "-0.69" },
-		"defence": { "mean": -0.2727272727272727, "number": 11, "format": "-0.27" },
-		"set": { "mean": 1.25, "number": 4, "format": "1.25" }
+		"serve": { "mean": -0.2948717948717949, "number": 26, "format": "-0.29" },
+		"attack": { "mean": 0.02040816326530612, "number": 49, "format": "0.02" },
+		"block": { "mean": -0.34615384615384615, "number": 13, "format": "-0.35" },
+		"defence": { "mean": -0.13636363636363635, "number": 11, "format": "-0.14" },
+		"set": { "mean": 0.625, "number": 4, "format": "0.63" }
 	},
 	"-400700": {
-		"serve": { "mean": -1, "number": 30, "format": "-1.00" },
-		"attack": { "mean": 0.0547945205479452, "number": 73, "format": "0.05" },
-		"block": { "mean": -0.058823529411764705, "number": 17, "format": "-0.06" },
-		"defence": { "mean": 0.6111111111111112, "number": 18, "format": "0.61" },
-		"reception": { "mean": 0.15625, "number": 64, "format": "0.16" },
-		"set": { "mean": 0.6666666666666666, "number": 3, "format": "0.67" }
+		"serve": { "mean": -0.3333333333333333, "number": 30, "format": "-0.33" },
+		"attack": { "mean": 0.0273972602739726, "number": 73, "format": "0.03" },
+		"block": { "mean": -0.029411764705882353, "number": 17, "format": "-0.03" },
+		"defence": { "mean": 0.3055555555555556, "number": 18, "format": "0.31" },
+		"reception": { "mean": 0.078125, "number": 64, "format": "0.08" },
+		"set": { "mean": 0.3333333333333333, "number": 3, "format": "0.33" }
 	},
 	"-427391": {
-		"serve": { "mean": -1, "number": 17, "format": "-1.00" },
-		"attack": { "mean": 0.38461538461538464, "number": 13, "format": "0.38" },
-		"defence": { "mean": 1, "number": 5, "format": "1.00" },
-		"reception": { "mean": 0.45454545454545453, "number": 11, "format": "0.45" }
+		"serve": { "mean": -0.3333333333333333, "number": 17, "format": "-0.33" },
+		"attack": { "mean": 0.19230769230769232, "number": 13, "format": "0.19" },
+		"defence": { "mean": 0.5, "number": 5, "format": "0.50" },
+		"reception": { "mean": 0.22727272727272727, "number": 11, "format": "0.23" }
 	},
 	"-452517": {
-		"serve": { "mean": -1, "number": 1, "format": "-1.00" },
+		"serve": { "mean": -0.3333333333333333, "number": 1, "format": "-0.33" },
 		"attack": { "mean": 0, "number": 3, "format": "0.00" },
 		"block": { "mean": 0, "number": 1, "format": "0.00" },
-		"set": { "mean": 2, "number": 1, "format": "2.00" }
+		"set": { "mean": 1, "number": 1, "format": "1.00" }
 	},
 	"-322970": {
-		"serve": { "mean": -1, "number": 1, "format": "-1.00" },
-		"block": { "mean": -2, "number": 1, "format": "-2.00" },
-		"reception": { "mean": 1, "number": 1, "format": "1.00" }
+		"serve": { "mean": -0.3333333333333333, "number": 1, "format": "-0.33" },
+		"block": { "mean": -1, "number": 1, "format": "-1.00" },
+		"reception": { "mean": 0.5, "number": 1, "format": "0.50" }
 	},
 	"-473629": {
-		"serve": { "mean": -1, "number": 1, "format": "-1.00" },
-		"set": { "mean": 2, "number": 6, "format": "2.00" }
+		"serve": { "mean": -0.3333333333333333, "number": 1, "format": "-0.33" },
+		"set": { "mean": 1, "number": 6, "format": "1.00" }
 	},
 	"-452825": {
-		"serve": { "mean": -1.0178571428571428, "number": 56, "format": "-1.02" },
-		"attack": { "mean": 0.2872340425531915, "number": 188, "format": "0.29" },
-		"block": { "mean": -0.09523809523809523, "number": 42, "format": "-0.10" },
-		"defence": { "mean": -0.11864406779661017, "number": 59, "format": "-0.12" },
+		"serve": { "mean": -0.33928571428571425, "number": 56, "format": "-0.34" },
+		"attack": { "mean": 0.14361702127659576, "number": 188, "format": "0.14" },
+		"block": { "mean": -0.047619047619047616, "number": 42, "format": "-0.05" },
+		"defence": { "mean": -0.059322033898305086, "number": 59, "format": "-0.06" },
 		"reception": { "mean": 0, "number": 2, "format": "0.00" },
-		"set": { "mean": 0.4, "number": 10, "format": "0.40" }
+		"set": { "mean": 0.2, "number": 10, "format": "0.20" }
 	},
 	"-441137": {
-		"serve": { "mean": -1.3333333333333333, "number": 6, "format": "-1.33" },
+		"serve": { "mean": -0.4444444444444444, "number": 6, "format": "-0.44" },
 		"attack": { "mean": 0, "number": 8, "format": "0.00" },
 		"block": { "mean": 0, "number": 2, "format": "0.00" },
-		"defence": { "mean": 1, "number": 4, "format": "1.00" },
-		"reception": { "mean": -0.21052631578947367, "number": 19, "format": "-0.21" },
-		"set": { "mean": 2, "number": 1, "format": "2.00" }
+		"defence": { "mean": 0.5, "number": 4, "format": "0.50" },
+		"reception": { "mean": -0.10526315789473684, "number": 19, "format": "-0.11" },
+		"set": { "mean": 1, "number": 1, "format": "1.00" }
 	},
 	"-470105": {
-		"serve": { "mean": -1.5, "number": 4, "format": "-1.50" },
-		"attack": { "mean": 0.3333333333333333, "number": 6, "format": "0.33" },
-		"block": { "mean": 0.5, "number": 2, "format": "0.50" },
-		"defence": { "mean": -2, "number": 2, "format": "-2.00" },
-		"set": { "mean": 0.6666666666666666, "number": 3, "format": "0.67" }
+		"serve": { "mean": -0.5, "number": 4, "format": "-0.50" },
+		"attack": { "mean": 0.16666666666666666, "number": 6, "format": "0.17" },
+		"block": { "mean": 0.25, "number": 2, "format": "0.25" },
+		"defence": { "mean": -1, "number": 2, "format": "-1.00" },
+		"set": { "mean": 0.3333333333333333, "number": 3, "format": "0.33" }
 	},
 	"-296534": {
-		"attack": { "mean": -1, "number": 1, "format": "-1.00" },
-		"defence": { "mean": 0.4132231404958678, "number": 121, "format": "0.41" },
-		"reception": { "mean": 0.4752475247524752, "number": 202, "format": "0.48" },
-		"set": { "mean": 1.75, "number": 96, "format": "1.75" }
+		"attack": { "mean": -0.5, "number": 1, "format": "-0.50" },
+		"defence": { "mean": 0.2066115702479339, "number": 121, "format": "0.21" },
+		"reception": { "mean": 0.2376237623762376, "number": 202, "format": "0.24" },
+		"set": { "mean": 0.875, "number": 96, "format": "0.88" }
 	},
 	"-400897": {
-		"block": { "mean": -2, "number": 1, "format": "-2.00" },
-		"defence": { "mean": 0.12631578947368421, "number": 95, "format": "0.13" },
-		"reception": { "mean": 0.43315508021390375, "number": 187, "format": "0.43" },
-		"set": { "mean": 1.7818181818181817, "number": 55, "format": "1.78" }
+		"block": { "mean": -1, "number": 1, "format": "-1.00" },
+		"defence": { "mean": 0.06315789473684211, "number": 95, "format": "0.06" },
+		"reception": { "mean": 0.21657754010695188, "number": 187, "format": "0.22" },
+		"set": { "mean": 0.8909090909090909, "number": 55, "format": "0.89" }
 	},
 	"-452203": {
-		"block": { "mean": -2, "number": 1, "format": "-2.00" },
-		"defence": { "mean": 0.1111111111111111, "number": 162, "format": "0.11" },
-		"reception": { "mean": 0.47029702970297027, "number": 202, "format": "0.47" },
-		"set": { "mean": 1.881578947368421, "number": 76, "format": "1.88" }
+		"block": { "mean": -1, "number": 1, "format": "-1.00" },
+		"defence": { "mean": 0.05555555555555555, "number": 162, "format": "0.06" },
+		"reception": { "mean": 0.23514851485148514, "number": 202, "format": "0.24" },
+		"set": { "mean": 0.9407894736842105, "number": 76, "format": "0.94" }
 	},
 	"-453097": {
-		"defence": { "mean": 0.3618421052631579, "number": 152, "format": "0.36" },
-		"reception": { "mean": 0.4041666666666667, "number": 240, "format": "0.40" },
-		"set": { "mean": 1.9052631578947368, "number": 95, "format": "1.91" }
+		"defence": { "mean": 0.18092105263157895, "number": 152, "format": "0.18" },
+		"reception": { "mean": 0.20208333333333334, "number": 240, "format": "0.20" },
+		"set": { "mean": 0.9526315789473684, "number": 95, "format": "0.95" }
 	},
 	"-389304": {
-		"defence": { "mean": 0.25, "number": 144, "format": "0.25" },
-		"reception": { "mean": 0.2867132867132867, "number": 286, "format": "0.29" },
-		"set": { "mean": 1.6404494382022472, "number": 89, "format": "1.64" }
+		"defence": { "mean": 0.125, "number": 144, "format": "0.13" },
+		"reception": { "mean": 0.14335664335664336, "number": 286, "format": "0.14" },
+		"set": { "mean": 0.8202247191011236, "number": 89, "format": "0.82" }
 	},
 	"-409549": {
-		"defence": { "mean": 0.17647058823529413, "number": 17, "format": "0.18" },
-		"reception": { "mean": 0.11764705882352941, "number": 51, "format": "0.12" },
-		"set": { "mean": 2, "number": 5, "format": "2.00" }
+		"defence": { "mean": 0.08823529411764706, "number": 17, "format": "0.09" },
+		"reception": { "mean": 0.058823529411764705, "number": 51, "format": "0.06" },
+		"set": { "mean": 1, "number": 5, "format": "1.00" }
 	},
 	"-441138": {
-		"defence": { "mean": 0.04950495049504951, "number": 101, "format": "0.05" },
-		"reception": { "mean": 0.4174757281553398, "number": 309, "format": "0.42" },
-		"set": { "mean": 1.6101694915254237, "number": 59, "format": "1.61" }
+		"defence": { "mean": 0.024752475247524754, "number": 101, "format": "0.02" },
+		"reception": { "mean": 0.2087378640776699, "number": 309, "format": "0.21" },
+		"set": { "mean": 0.8050847457627118, "number": 59, "format": "0.81" }
 	},
 	"-452829": {
-		"defence": { "mean": 0.03125, "number": 32, "format": "0.03" },
-		"reception": { "mean": -0.2018348623853211, "number": 109, "format": "-0.20" },
-		"set": { "mean": 0.8666666666666667, "number": 15, "format": "0.87" }
+		"defence": { "mean": 0.015625, "number": 32, "format": "0.02" },
+		"reception": { "mean": -0.10091743119266056, "number": 109, "format": "-0.10" },
+		"set": { "mean": 0.43333333333333335, "number": 15, "format": "0.43" }
 	},
 	"-400775": {
-		"defence": { "mean": -0.08, "number": 100, "format": "-0.08" },
-		"reception": { "mean": 0.0728476821192053, "number": 151, "format": "0.07" },
-		"set": { "mean": 1.5740740740740742, "number": 54, "format": "1.57" }
+		"defence": { "mean": -0.04, "number": 100, "format": "-0.04" },
+		"reception": { "mean": 0.03642384105960265, "number": 151, "format": "0.04" },
+		"set": { "mean": 0.7870370370370371, "number": 54, "format": "0.79" }
 	},
 	"-453103": {
-		"defence": { "mean": -2, "number": 1, "format": "-2.00" },
+		"defence": { "mean": -1, "number": 1, "format": "-1.00" },
 		"reception": { "mean": 0, "number": 1, "format": "0.00" }
 	}
 }

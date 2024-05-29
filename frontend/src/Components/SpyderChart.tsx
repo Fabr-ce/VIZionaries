@@ -16,7 +16,7 @@ export default function SpyderChart({ data, names }: { data: spyderInput[]; name
 			return labels.map(a => ({
 				name: names[i],
 				key: a,
-				value: ((d[a]?.mean ?? -2) + 2) / 8,
+				value: ((d[a]?.mean ?? -1) + 1) / 4,
 				count: d[a]?.number ?? 0,
 			}))
 		})
@@ -63,7 +63,7 @@ export default function SpyderChart({ data, names }: { data: spyderInput[]; name
 					y: d => 90 - d,
 					dx: 10,
 					textAnchor: "start",
-					text: d => `${8 * d - 2}`,
+					text: d => `${4 * d - 1}`,
 					fontWeight: "bold",
 					fontSize: 15,
 				}),
@@ -103,7 +103,7 @@ export default function SpyderChart({ data, names }: { data: spyderInput[]; name
 					Plot.pointer({
 						x: ({ key }) => longitude(key),
 						y: ({ value }) => 90 - value,
-						text: d => `${(8 * d.value - 2).toFixed(2)} (${d.count})`,
+						text: d => `${(4 * d.value - 1).toFixed(2)} (${d.count})`,
 						textAnchor: "start",
 						dx: 6,
 						fill: "name",
